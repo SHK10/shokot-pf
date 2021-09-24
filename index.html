@@ -16,8 +16,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <!-- ここから下が本文 -->>
     <body id="page-top">
-        <!-- Navigation-->
+        <!-- ヘッダーのナビゲーション -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar-logo.png" alt="" /></a>
@@ -27,6 +28,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
+                        <!-- ここに追加して、hrefに#[id名]でページ内を移動可能 -->
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Skills</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                         <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> -->
@@ -36,7 +38,7 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
+        <!-- タイトルの文 -->
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">IT Engineer (Front-end / Back-end / DevOps)</div>
@@ -44,7 +46,7 @@
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
             </div>
         </header>
-        <!-- Services-->
+        <!-- スキルや経験などを記述する欄 -->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
@@ -98,21 +100,25 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio Grid-->
+        <!-- ポートフォリオ欄 (画像)　-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
                     <h3 class="section-subheading text-muted">These are the projects and services I have been involved in including personally developed system.</h3>
                 </div>
+                <!-- ①見出し -->
                 <h3 class="">Business Experiences</h3>
                 <div class="row business-block">
+                    <!-- ①ポートフォリオ　-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <!-- ポートフォリオ① > 画像:srcに画像のURLまたはフォルダへのパス -->
+                                <!-- (フォルダへのパスでリンクする場合、画像はassetsフォルダに格納) -->
                                 <img class="img-fluid" src="assets/img/portfolio/01_ContentManagementSystem.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
@@ -121,12 +127,15 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ②ポートフォリオ　-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <!-- ポートフォリオ② > 画像:srcに画像のURLまたはフォルダへのパス -->
+                                <!-- (フォルダへのパスでリンクする場合、画像はassetsフォルダに格納) -->
                                 <img class="img-fluid" src="assets/img/portfolio/02_RemoteCallSystem.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
@@ -135,12 +144,15 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ③ポートフォリオ　-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <!-- ポートフォリオ③ > 画像:srcに画像のURLまたはフォルダへのパス -->
+                                <!-- (フォルダへのパスでリンクする場合、画像はassetsフォルダに格納) -->
                                 <img class="img-fluid" src="assets/img/portfolio/03_NursingHomeManagement.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
@@ -150,14 +162,18 @@
                         </div>
                     </div>
                 </div>
+                <!-- ②見出し -->
                 <h3 class="">Personal Experiences</h3>
                 <div class="row personal-block">
+                    <!-- ④ポートフォリオ　-->
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <!-- ポートフォリオ④ > 画像:srcに画像のURLまたはフォルダへのパス -->
+                                <!-- (フォルダへのパスでリンクする場合、画像はassetsフォルダに格納) -->
                                 <img class="img-fluid" src="assets/img/portfolio/04_PosmApp.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
@@ -166,12 +182,15 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ⑤ポートフォリオ　-->
                     <div class="col-lg-4 col-sm-6">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <!-- ポートフォリオ⑤ > 画像:srcに画像のURLまたはフォルダへのパス -->
+                                <!-- (フォルダへのパスでリンクする場合、画像はassetsフォルダに格納) -->
                                 <img class="img-fluid" src="assets/img/portfolio/05_MyBuffettKun.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
@@ -180,12 +199,15 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ⑥ポートフォリオ　-->
                     <div class="col-lg-4 col-sm-6">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <!-- ポートフォリオ⑥ > 画像:srcに画像のURLまたはフォルダへのパス -->
+                                <!-- (フォルダへのパスでリンクする場合、画像はassetsフォルダに格納) -->
                                 <img class="img-fluid" src="assets/img/portfolio/06_PepupAutomation.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
@@ -194,12 +216,15 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ⑦ポートフォリオ　-->
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModalX">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <!-- ポートフォリオ⑦ > 画像:srcに画像のURLまたはフォルダへのパス -->
+                                <!-- (フォルダへのパスでリンクする場合、画像はassetsフォルダに格納) -->
                                 <img class="img-fluid" src="assets/img/portfolio/XX_TBU.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
@@ -208,12 +233,15 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ⑧ポートフォリオ　-->
                     <div class="col-lg-4 col-sm-6">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModalX">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <!-- ポートフォリオ⑦ > 画像:srcに画像のURLまたはフォルダへのパス -->
+                                <!-- (フォルダへのパスでリンクする場合、画像はassetsフォルダに格納) -->
                                 <img class="img-fluid" src="assets/img/portfolio/XX_TBU.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
@@ -223,10 +251,31 @@
                         </div>
                     </div>
                 </div>
+                <!-- X.見出し -->
+                <h3 class="">Personal Experiences</h3>
+                <div class="row personal-block">
+                    <!-- X.ポートフォリオ　-->
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <!-- ポートフォリオ④ > 画像:srcに画像のURLまたはフォルダへのパス -->
+                                <!-- (フォルダへのパスでリンクする場合、画像はassetsフォルダに格納) -->
+                                <img class="img-fluid" src="assets/img/portfolio/04_PosmApp.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Positioning Map Application</div>
+                                <div class="portfolio-caption-subheading text-muted">PWA and GraphQL application</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
             </div>
         </section>
         <!-- About-->
-        <!-- <section class="page-section" id="about">
+        <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>
@@ -286,9 +335,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Team-->
-        <!-- <section class="page-section bg-light" id="team">
+        <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
@@ -330,9 +379,9 @@
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Clients-->
-        <!-- <div class="py-5">
+        <div class="py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 my-3">
@@ -349,9 +398,9 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Contact-->
-        <!-- <section class="page-section" id="contact">
+        <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
@@ -386,7 +435,7 @@
                     </div>
                 </form>
             </div>
-        </section> -->
+        </section>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
@@ -406,6 +455,8 @@
         </footer>
         <!-- Portfolio Modals-->
         <!-- Modal 1-->
+        <!-- ①モーダル (ポップアップ) -->
+        <!-- (ここの下のid(portfolioModal1とか)がポートフォリオのhrefと#id名(#portfolioModal1)でリンクして、ポップアップがあがる) -->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -417,17 +468,12 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase xs-title">Robot Content Management System</h2>
                                     <p class="item-intro text-muted">Make a content for robots with workflow</p>
-                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01_ContentManagementSystem.png" alt="" /> -->
+                                    <!-- ①モーダル　画像または動画 -->
+                                    <!-- (videoタグのsrcにgoogle driveのリンクを貼る、リンクの形式は右の例と同じで。(https://drive.google.com/uc?authuser=0&id=[ファイルID]&export=download)) -->
                                     <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1AFcGuE0fKJDK6KR37T_feLTdP7a8Kasc&export=download" alt="video" controls autoplay></video>
+                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01_ContentManagementSystem.png" alt="" /> -->
                                     <!-- <iframe src="https://drive.google.com/file/d/1AFcGuE0fKJDK6KR37T_feLTdP7a8Kasc/preview" width="640" height="480" allow="autoplay" frameborder="0" autoplay="true"></iframe> -->
                                     <div class="content-block container">
-                                        <!-- <h4 class="text-left">Project Overview: [<a href="https://www.softbankrobotics.com/jp/product/biz3/services/" target="_blank">&nbsp;Reference Link&nbsp;</a>]</h4>
-                                        <p class="text-left text-block">
-                                            Stationed at a major telecommunications company, I was responsible for the development and maintenance of a content management web application system for robots, a service developed by our customer for their corporate users (i.g. retail industry, retail food and beverage, etc).
-                                           As the leader of about a 6-member team, I've been responsible for a wide range of tasks from client negotiation, design, implementation, and man-hour/progress management.
-                                           In development, I mainly worked on the front-end side, but also handled the back-end, DB, server, and CI/CD.
-                                           The system has a rich workflow-type UI to enable to create robot contents easily, and features complex event and data management in addition to the ability to preview robot behavior.                                           
-                                        </p> -->
                                         <h4 class="">Project Overview</h4>
                                         <p class="text-left text-block">
                                             Stationed at a major telecommunications company, I was responsible for the development and maintenance of a content management web application system for robots, a service developed by our customer for their corporate users (i.g. retail industry, retail food and beverage, etc).
