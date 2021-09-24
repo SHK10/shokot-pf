@@ -7,8 +7,14 @@
   * Terminalで下記のコマンドを実行ください。
 
     ```bash
+    # 更新を確認
     git fetch
-    git pull new HEAD
+    # ローカルの変更を退避
+    git stash
+    # 変更を取り込む
+    git pull
+    # 退避したローカルの変更を復元
+    git stash pop
     ```
 
     * 更新されなかったら教えてください。
