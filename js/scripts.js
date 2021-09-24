@@ -2,8 +2,9 @@
     * Start Bootstrap - Agency v6.0.3 (https://startbootstrap.com/theme/agency)
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-    */
-    (function ($) {
+*/
+// <reference 
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
@@ -53,4 +54,22 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    // Disable img and video download
+    $("img").on("contextmenu drag dragstart dragend", () => false);
+    $("video").on("contextmenu", () => false);
+
+    // Dummy Login
+    const dummy = "ao"
+    const dummyDom = $("#dummy");
+    const dummyInputDom = dummyDom.find("input")
+    dummyInputDom.on("keyup", (event) => {
+        if (event.keyCode !== 13) {
+            return;
+        }
+        const value = (dummyInputDom && dummyInputDom[0]) ? dummyInputDom[0].value : "";
+        if (value === dummy) {
+            dummyDom.css("display", "none");
+        } 
+    });
 })(jQuery); // End of use strict

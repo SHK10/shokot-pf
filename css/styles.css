@@ -54,6 +54,26 @@
   padding: 0.5rem;
   /* margin-bottom: 0rem; */
 }
+
+.dummy-login {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background: center url('../assets/img/header-bg.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dummy-login > input {
+  border-radius: 0px;
+  box-shadow: 0 0 5px 0 rgba(255,153,0,1);
+  border: 0px solid;
+  
+}
+
 /*
  * for smartphone
  */
