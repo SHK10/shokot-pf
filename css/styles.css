@@ -6,7 +6,7 @@
   font-size: smaller;
 }
 .strong-red strong {
-  color: var(--red-dark);
+  color: var(--keydark);
 }
 .text-block {
   text-indent: 1em;
@@ -19,6 +19,7 @@
 } */
 .table-block table {
   margin: auto;
+  border-bottom: 1px solid var(--sublight);
 }
 .table-block table tr td {
   font-size: 1rem;
@@ -31,7 +32,7 @@
   font-size: 1.2rem;
 }
 .table-block strong {
-  color: var(--red-dark);
+  color: var(--keydark);
 }
 /* .content-block > h4 {
   text-indent: -1rem;
@@ -61,7 +62,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 9999;
-  background: center url('../assets/img/header-bg.jpg');
+  background: var(--keyclr);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,23 +70,76 @@
 
 .dummy-login > input {
   border-radius: 0px;
-  box-shadow: 0 0 5px 0 rgba(255,153,0,1);
-  border: 0px solid;
+  border: 0px solid var(--keydark);
+}
+
+.dummy-login > input:focus {
+  outline: none;  
 }
 
 .main-title {
   font-family: Georgia, serif;
 }
 
+.category-btns {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-btns > a {
+  font-size: 1.2rem;
+  color: var(--subclr);
+}
+
+.category-btns > a:hover {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.7rem;
+  transition: 0.1s all;
+  color: var(--sublight);
+}
+
+.category-btns > a.selected {
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: var(--keyclr);
+}
+
+.category-btns > span {
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+#projects {
+  transition: 5s all;
+}
+
+.portfolio-modal .modal-body .img-fluid {
+  margin-bottom: 2rem;
+}
+
+.bottom-space {
+  margin-bottom: 8rem!important;
+}
+
 /*
  * for smartphone
  */
- @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .xs-title {
     font-size: 2.0rem!important;
   }
   .xs-table-content tr td {
     font-size: 0.7rem!important;
+  }
+  .category-btns {
+    max-width: 100%;
+    justify-content: center;
   }
 }
 
@@ -102,14 +156,14 @@
  */
 :root {
   /* custom */
-  --keylight: #528da5;
-  --keyclr: #0a76a1;
+  --keylight: #5a9bb4;
+  --keyclr: #007394;
   --keydark: #004964;
   --sublight: #c0c0c0;
   --subclr: #7c7c7c;
   --subdark: #3b3b3b;
   --bgdark: #061420;
-  --bgmask: rgba(6, 20, 32, 0.5);
+  --bgmask: rgba(6, 20, 32, 0.4);
   --keyfont: "Montserrat", "Helvetica Neue", Arial;
   /* ------- */
   --blue: #007bff;
@@ -10217,25 +10271,36 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
-header.masthead {
-  padding-top: 10.5rem;
+div.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/myroom.jpg");
+  /* background-image: url("../assets/img/myroom.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: 100% auto;
+  background-size: 100% auto; */
 }
-header.masthead .masthead-subheading {
+
+div.masthead img {
+  /* position: absolute; */
+  width: 100%;
+}
+
+div.masthead .content-header {
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+}
+
+div.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-header.masthead .masthead-heading {
+.btn-dark:not(:disabled):not(.disabled):active.masthead .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -10245,8 +10310,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    /* padding-top: 10rem;
+    padding-bottom: 12.5rem; */
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -10262,13 +10327,11 @@ header.masthead .masthead-heading {
   }
 }
 #portfolio .portfolio-item {
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   /* max-width: 25rem; */
   /* margin-left: auto; */
   /* margin-right: auto; */
 }
-
-
 
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
@@ -10292,15 +10355,16 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
   color: white;
+  margin: 3px 7px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .hover-content-bottom {
   height: 11%;
-  width: calc(100% - 28px);
+  width: 100%;
   display: flex;
   align-items: flex-end;
-  margin: 0px 12px;
-  font-size: 1rem;
+  padding: 0px 6px;
+  font-size: 1.0rem;
   color: var(--keylight);
   font-weight: 500;
   line-height: 21px;
@@ -10308,17 +10372,17 @@ header.masthead .masthead-heading {
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .hover-content-above {
   height: 89%;
-  width: calc(100% - 24px);
+  width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   text-align: right;
   justify-content: end;
-  font-size: 0.6rem;
-  margin: 0px 14px;
+  font-size: 0.7rem;
+  padding: 0px 8px;
   color: white;
   font-weight: 500;
-  font-family: Georgia;
+  font-family: var(--keyfont);
 }
 
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
@@ -10339,8 +10403,8 @@ header.masthead .masthead-heading {
   color: white;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.2rem;
-  padding: 4px 12px;
+  font-size: 1.0rem;
+  padding: 7px 7px;
   font-family: var(--keyfont);
   font-weight: 400;
   margin-bottom: 0;
@@ -10355,27 +10419,28 @@ header.masthead .masthead-heading {
   max-width: 100vw;
 }
 .portfolio-modal .modal-content {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
   font-size: 3rem;
   line-height: 3rem;
+  margin-bottom: 8rem;
 }
 .portfolio-modal .modal-content p.item-intro {
   font-style: italic;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .portfolio-modal .modal-content p {
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
 }
 .portfolio-modal .modal-content ul.list-inline {
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
 }
 .portfolio-modal .modal-content .modal-body > img {
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
 }
 /* .portfolio-modal .modal-content .movie-block img {
   margin-bottom: 0px;
