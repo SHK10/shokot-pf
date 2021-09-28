@@ -95,7 +95,7 @@
         {
             order: 1,
             title: "KASOUKEN no ONNA -season21-", // タイトル
-            modalRef: "#portfolioModal1", // モーダルとの紐付け
+            modalRef: "#portfolioModalKasouken21", // モーダルとの紐付け
             year: "2021", // ホバー時の表示文言
             month: "Aug", // ホバー時の表示文言
             description: "OP Movie", // ホバー時の表示文言
@@ -109,7 +109,7 @@
             modalRef: "#portfolioModalKarisomeOct",
             year: "2019",
             month: "Oct",
-            description: "OP Movie",
+            description: "OP Movie / extra graphics",
             imagePath: "./assets/img/pj-head/1910_KarisomeOct.jpg",
             category: [
                 categories.op
@@ -128,10 +128,10 @@
         },
         {
             title: "MUSIC STATION",
-            modalRef: "#portfolioModal7",
+            modalRef: "#portfolioModalMUSICSTATION",
             year: "Until",
             month: "now",
-            description: "Artist back LED movie",
+            description: "Artist back movie",
             imagePath: "./assets/img/pj-head/MUSICSTATION.jpg",
             category: [
                 categories.illust
@@ -139,7 +139,7 @@
         },        
         {
             title: "KANJAM",
-            modalRef: "#portfolioModal5",
+            modalRef: "#portfolioModalKanjam",
             year: "2018",
             month: "Jul",
             description: "OP Movie",
@@ -151,7 +151,7 @@
         },
         {
             title: "HIMOMEN",
-            modalRef: "#portfolioModal4",
+            modalRef: "#portfolioModalHimomen",
             year: "2018",
             month: "Jul",
             description: "OP Movie",
@@ -163,32 +163,33 @@
         },
         {
             title: "Air Girl",
-            modalRef: "#portfolioModal6",
+            modalRef: "#portfolioModalAirgirl",
             year: "2021",
-            month: "Sep",
-            description: "Key visual graffic",
+            month: "Feb",
+            description: "Key visual ",
             imagePath: "./assets/img/pj-head/2102_Airgirl.jpg",
             category: [
-                categories.op
+                categories.none
             ],
         },
         {
             title: "SEKAI TAISOU -2021-",
-            modalRef: "#portfolioModal8",
+            modalRef: "#portfolioModalSekaiTaisou",
             year: "2021",
             month: "Sep",
-            description: "Key visual graffic",
-            imagePath: "./assets/img/pj-head/2109_Sekai Taisou 2021.jpg",
+            description: "OP movie / Key visual / all around the venue design",
+            imagePath: "./assets/img/pj-head/2109_SekaiTaisou_2021.jpg",
             category: [
-                categories.op
+                categories.op,
+                categories.threeD
             ],
         },
         {
             title: "ABEMA HILLS",
-            modalRef: "#portfolioModal9",
+            modalRef: "#portfolioModalABEMAhills",
             year: "2020",
             month: "Jul",
-            description: "Key visual graffic",
+            description: "LOGO / OP movie / extra graphics",
             imagePath: "./assets/img/pj-head/2006_ABEMAhills.jpg",
             category: [
                 categories.op,
@@ -201,7 +202,7 @@
             modalRef: "#portfolioModalAzatokute",
             year: "2019",
             month: "Jul",
-            description: "Key visual graffic",
+            description: "LOGO / extra graphics",
             imagePath: "./assets/img/pj-head/1909_Azatokute.jpg",
             category: [
                 categories.logo
@@ -212,10 +213,10 @@
             modalRef: "#portfolioModalOnegai",
             year: "2020",
             month: "Nov",
-            description: "Key visual graffic",
+            description: "CG set design",
             imagePath: "./assets/img/pj-head/2011_Onegai.jpg",
             category: [
-                categories.logo
+                categories.threeD
             ],
         },
         {
@@ -223,10 +224,11 @@
             modalRef: "#portfolioModalCGDog",
             year: "2019",
             month: "Mar",
-            description: "Character design",
+            description: "Animal character design",
             imagePath: "./assets/img/pj-head/1903_CGDog.jpg",
             category: [
-                categories.illust
+                categories.illust,
+                categories.threeD
             ],
         },
         {
@@ -234,18 +236,19 @@
             modalRef: "#portfolioModalTaiyoutoBolero",
             year: "2021",
             month: "Jun",
-            description: "LOGO VFX Graffic",
+            description: "LOGO / VFX / extra graffics",
             imagePath: "./assets/img/pj-head/2106_TaiyoutoBolero.jpg",
             category: [
-                categories.logo.threeD
+                categories.logo,
+                categories.threeD
             ],
         },
         {
             title: "Ariyoshi Tankentai",
             modalRef: "#portfolioModalAriyoshiTankentai",
-            year: "2019",
-            month: "Mar",
-            description: "LOGO OP Graffic ",
+            year: "2017",
+            month: "Jul",
+            description: "LOGO / OP movie / extra graffics ",
             imagePath: "./assets/img/pj-head/1707_AriyoshiTankentai.jpg",
             category: [
                 categories.logo.op
