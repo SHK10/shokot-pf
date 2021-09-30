@@ -88,23 +88,13 @@
         logo: "logo",
         character: "character",
         illust: "illust",
-        threeD: "threeD"
+        threeD: "threeD",
+        personal: "personal",
     }
 
     const configs = [
         {
             order: 1,
-            title: "KASOUKEN no ONNA -season21-", // タイトル
-            modalRef: "#portfolioModalKasouken21", // モーダルとの紐付け
-            year: "2021", // ホバー時の表示文言
-            month: "Aug", // ホバー時の表示文言
-            description: "OP Movie", // ホバー時の表示文言
-            imagePath: "./assets/img/pj-head/2108_Kasouken21.jpg", // 画像のパス
-            category: [
-                categories.op,
-            ], // カテゴリ (複数の場合は複数追加)
-        },
-        {
             title: "Karisome Tengoku  -oct-",
             modalRef: "#portfolioModalKarisomeOct",
             year: "2019",
@@ -116,6 +106,7 @@
             ],
         },
         {
+            order: 2,
             title: "Karisome Tengoku  -Mar-",
             modalRef: "#portfolioModalKarisomeMar",
             year: "2019",
@@ -125,6 +116,18 @@
             category: [
                 categories.op
             ],
+        },
+        {
+            order: 3,
+            title: "KASOUKEN no ONNA -season21-", 
+            modalRef: "#portfolioModalKasouken21",
+            year: "2021", 
+            month: "Aug", 
+            description: "OP Movie", 
+            imagePath: "./assets/img/pj-head/2108_Kasouken21.jpg",
+            category: [
+                categories.op,
+            ], 
         },
         {
             title: "MUSIC STATION",
@@ -228,7 +231,8 @@
             imagePath: "./assets/img/pj-head/1903_CGDog.jpg",
             category: [
                 categories.illust,
-                categories.threeD
+                categories.threeD,
+                categories.personal
             ],
         },
         {

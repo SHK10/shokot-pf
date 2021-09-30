@@ -130,6 +130,11 @@
   font-family: "MS Mincho", "Hiragino Mincho ProN";
 }
 
+.portfolio-modal .modal-body .library-block img {
+  padding: 4rem 3rem 0rem 3rem; 
+}
+
+
 .bottom-space {
   margin-bottom: 8rem!important;
 }
@@ -161,6 +166,13 @@
   .category-btns {
     max-width: 100%;
     justify-content: center;
+  }
+  div.masthead {
+    padding-top: 72px;
+    padding-bottom: 2rem!important;
+  }
+  .page-section {
+    padding-top: 2.8rem!important;
   }
 }
 
