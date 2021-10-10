@@ -134,6 +134,18 @@
   padding: 4rem 3rem 0rem 3rem; 
 }
 
+.portfolio-modal.dark-theme {
+  color: white;
+}
+
+.portfolio-modal.dark-theme .modal-content {
+  background-color: black;
+}
+
+
+.portfolio-modal.dark-theme .modal-content .close-modal img {
+  filter: invert();
+}
 
 .bottom-space {
   margin-bottom: 8rem!important;
@@ -10504,6 +10516,22 @@ text-shadow: 1.5px 1.5px 4px #000000;
   padding: 2rem;
   margin-bottom: 2rem;
 }
+
+.portfolio-modal .modal-content .iframe-block {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+  margin-bottom: 2rem;
+}
+
+.portfolio-modal .modal-content .iframe-block iframe {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /* .portfolio-modal .modal-content .movie-block img {
   margin-bottom: 0px;
 } */

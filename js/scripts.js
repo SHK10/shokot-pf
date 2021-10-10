@@ -247,17 +247,18 @@
                 categories.threeD
             ],
         },
-        {
-            title: "Ariyoshi Tankentai",
-            modalRef: "#portfolioModalAriyoshiTankentai",
-            year: "2017",
-            month: "Jul",
-            description: "LOGO / OP movie / extra graffics ",
-            imagePath: "./assets/img/pj-head/1707_AriyoshiTankentai.jpg",
-            category: [
-                categories.logo.op
-            ],
-        },
+        // {
+        //     title: "Ariyoshi Tankentai",
+        //     modalRef: "#portfolioModalAriyoshiTankentai",
+        //     year: "2017",
+        //     month: "Jul",
+        //     description: "LOGO / OP movie / extra graffics ",
+        //     imagePath: "./assets/img/pj-head/1707_AriyoshiTankentai.jpg",
+        //     category: [
+        //         categories.logo.op
+        //     ],
+        // },
+
         // TODO: add here
     ];
 
