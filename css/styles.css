@@ -10468,6 +10468,16 @@ text-shadow: 1.5px 1.5px 4px #000000;
   max-width: 100vw;
 }
 
+.open-image-src {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.open-image-src:hover {
+  opacity: 0.95;
+  transition-duration: 0.3s;
+}
+
 @media screen and (max-width: 480px) {
   .portfolio-modal .modal-dialog {
     margin: 1rem 1rem;
@@ -10515,6 +10525,20 @@ text-shadow: 1.5px 1.5px 4px #000000;
   /* margin: 0px -2rem; */
   padding: 2rem;
   margin-bottom: 2rem;
+}
+
+.portfolio-modal .modal-content .scroll-image-block {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.portfolio-modal .modal-content .scroll-image-block img {
+  width: 50%;
+}
+
+.portfolio-modal .modal-content .scroll-image-block.full img {
+  width: 100%;
 }
 
 .portfolio-modal .modal-content .iframe-block {
@@ -10801,3 +10825,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+.scroll{overflow-x:scroll;}
+.scroll::-webkit-scrollbar{height:7px;}/*バーの太さ*/
+.scroll::-webkit-scrollbar-track{background:#dddddd;}/*バーの背景色*/
+.scroll::-webkit-scrollbar-thumb{background:var(--keyclr);}/*バーの色*/

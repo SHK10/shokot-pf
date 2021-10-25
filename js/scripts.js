@@ -321,4 +321,10 @@
         });
     })
 
+    $(".open-image-src").on("click", (e) => {
+        if (e && e.currentTarget && e.currentTarget.src) {
+            window.open(e.currentTarget.src, '_blank')
+        }
+    });
+
 })(jQuery); // End of use strict

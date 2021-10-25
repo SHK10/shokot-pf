@@ -20,9 +20,9 @@
     </head>
     <!-- ここから下が本文 -->
     <body id="page-top">
-        <div id="dummy" class="dummy-login">
+        <!-- <div id="dummy" class="dummy-login">
             <input type="password" placeholder="PASS">
-        </div>
+        </div> -->
         <!-- ヘッダーのナビゲーション -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -34,8 +34,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <!-- ここに追加して、hrefに#[id名]でページ内を移動可能 -->
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Skills</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">WORKS</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">ABOUT</a></li>
                         <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> -->
                         <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li> -->
                         <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
@@ -69,6 +69,80 @@
                 </div>
                 <!-- ↓ jsからコンテンツ生成 -->
                 <div id="projects" class="row business-block"></div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">In my life</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>November 10th, 1993</h4>
+                                <h4 class="subheading">Born in Saitama</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">powerful country girl!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>April 2009</h4>
+                                <h4 class="subheading">Municipal Urawa High School</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Enjoyed foot ball.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">OCHABI</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Tuched art industry...</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <!-- Link modal! -->
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModalSchollDays">
+                                <div class="timeline-heading">
+                                    <h4>April 2012</h4>
+                                    <h4 class="subheading">Musashino Art University</h4>
+                                </div>
+                            </a>
+                            <div class="timeline-body"><p class="text-muted">▲ Click to see my School days works!</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>April 2017</h4>
+                                <h4 class="subheading">TV Asahi Create</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Started to CG Design</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                To be
+                                <br />
+                                continued!
+                                <br />
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- スキルや経験などを記述する欄 -->
@@ -923,11 +997,100 @@
             </div>
         </div>
 
-
-
-
-
-
+        <!-- Modal Extra 1.-->
+        <div class="portfolio-modal modal fade" id="portfolioModalSchollDays" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">SCHOOL DAYS WORKS</h2>
+                                <div class="modal-body">
+                                    <div class="scroll-image-block scroll full">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_01.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_02.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_03.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_04.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_05.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_06.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_07.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_08.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_09.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_10.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_11.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_12.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_13.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_14.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_15.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_16.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_17.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_18.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_19.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_20.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_21.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_22.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_23.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_24.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_25.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_26.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_27.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_28.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_29.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_30.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_31.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_32.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_33.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_34.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_35.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_38.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_39.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_40.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_41.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_42.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_43.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_44.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_45.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_46.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_47.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_50.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_51.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_52.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_53.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
