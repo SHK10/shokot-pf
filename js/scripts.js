@@ -217,7 +217,7 @@
             year: "2020",
             month: "Nov",
             description: "CG set design",
-            imagePath: "./assets/img/pj-head/2011_Onegai.jpg",
+            imagePath: "./assets/img/pj-head/2011_Onegai_set_logo.jpg",
             category: [
                 categories.threeD
             ],
