@@ -366,7 +366,7 @@ a {
   background-color: transparent;
 }
 a:hover {
-  color: #e6b301;
+  color: var(--subdark);
   text-decoration: underline;
 }
 
