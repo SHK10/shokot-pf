@@ -90,9 +90,23 @@
         illust: "illust",
         threeD: "threeD",
         personal: "personal",
+        graphic: "graphic",
     }
 
     const configs = [
+        {
+            order: 0,
+            title: "Watero",
+            modalRef: "#portfolioModalWatero",
+            year: "2020",
+            month: "Aug",
+            description: "Logo / extra graphics",
+            imagePath: "./assets/img/pj-head/1910_KarisomeOct.jpg",
+            category: [
+                categories.logo,
+                categories.graphic,
+            ],
+        },
         {
             order: 1,
             title: "Karisome Tengoku  -oct-",
