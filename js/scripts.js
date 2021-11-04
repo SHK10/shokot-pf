@@ -96,15 +96,16 @@
     const configs = [
         {
             order: 0,
-            title: "Watero",
+            title: "WaterO",
             modalRef: "#portfolioModalWatero",
             year: "2020",
             month: "Aug",
             description: "Logo / extra graphics",
-            imagePath: "./assets/img/pj-head/1910_KarisomeOct.jpg",
+            imagePath: "./assets/img/pj-head/2008_WaterO.jpg",
             category: [
-                categories.logo,
                 categories.graphic,
+                categories.logo,
+                categories.personal,
             ],
         },
         {
@@ -116,6 +117,7 @@
             description: "OP Movie / extra graphics",
             imagePath: "./assets/img/pj-head/1910_KarisomeOct.jpg",
             category: [
+                categories.graphic,
                 categories.op
             ],
         },
@@ -128,6 +130,7 @@
             description: "OP Movie",
             imagePath: "./assets/img/pj-head/1903_KarisomeMar.jpg",
             category: [
+                categories.graphic,
                 categories.op
             ],
         },
@@ -140,6 +143,7 @@
             description: "OP Movie", 
             imagePath: "./assets/img/pj-head/2108_Kasouken21.jpg",
             category: [
+                categories.graphic,
                 categories.op,
             ], 
         },
@@ -151,6 +155,7 @@
             description: "Artist back movie",
             imagePath: "./assets/img/pj-head/MUSICSTATION.jpg",
             category: [
+                categories.graphic,
                 categories.illust
             ],
         },        
@@ -175,6 +180,7 @@
             imagePath: "./assets/img/pj-head/1807_Himomen.jpg",
             category: [
                 categories.op,
+                categories.graphic,
                 categories.illust
             ],
         },
@@ -186,7 +192,7 @@
             description: "Key visual ",
             imagePath: "./assets/img/pj-head/2102_Airgirl.jpg",
             category: [
-                categories.none
+                categories.graphic,
             ],
         },
         {
@@ -198,6 +204,7 @@
             imagePath: "./assets/img/pj-head/2109_SekaiTaisou_2021.jpg",
             category: [
                 categories.op,
+                categories.graphic,
                 categories.threeD
             ],
         },
@@ -210,6 +217,7 @@
             imagePath: "./assets/img/pj-head/2006_ABEMAhills.jpg",
             category: [
                 categories.op,
+                categories.graphic,
                 categories.logo,
                 categories.illust
             ],
