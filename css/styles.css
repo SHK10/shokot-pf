@@ -147,6 +147,19 @@
   filter: invert();
 }
 
+.portfolio-modal.bright-theme {
+  /* color: ; */
+}
+
+.portfolio-modal.bright-theme .modal-content {
+  background-color: #F2F7F7;
+}
+
+/* .portfolio-modal.bright-theme .modal-content .close-modal img {
+  filter: invert();
+} */
+
+
 .bottom-space {
   margin-bottom: 8rem!important;
 }
