@@ -37,7 +37,9 @@
 /* .content-block > h4 {
   text-indent: -1rem;
 } */
-
+.history {
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Arial;
+}
 .movie-block {
   display: flex;
   align-items: center;
@@ -126,8 +128,12 @@
   font-weight: 600;
 }
 
+.portfolio-modal .modal-body .explain-block ul {
+  font-weight: 600;
+}
+
 .portfolio-modal .modal-body .comment-block {
-  font-family: "MS Mincho", "Hiragino Mincho ProN";
+  font-family: "Montserrat", "Helvetica Neue", Arial;
 }
 
 .portfolio-modal .modal-body .library-block img {
