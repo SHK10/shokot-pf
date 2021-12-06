@@ -156,7 +156,8 @@
             imagePath: "./assets/img/pj-head/MUSICSTATION.jpg",
             category: [
                 categories.graphic,
-                categories.illust
+                categories.illust,
+                categories.threeD
             ],
         },        
         {
