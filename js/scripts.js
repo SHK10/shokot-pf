@@ -319,9 +319,11 @@
     }
 
     const projectFilter = (categoryKey, e) => {
-        const contentClass = ".portfolio-item"
-        const selectedConfigs = configs.filter((config) => !categoryKey ? true : config.category.includes(categoryKey)).sort((a, b) => a.order - b.order)
-        const els = makeProjectEls(selectedConfigs)
+        const contentClass = ".portfolio-item";
+        const selectedConfigs = configs.filter((config) => {
+            return !categoryKey ? true : config.category.includes(categoryKey);
+        }).sort((a, b) => a.order - b.order);
+        const els = makeProjectEls(selectedConfigs);
 
         projectsEl.find(contentClass).fadeOut(1000);
         projectsEl.empty().append(els.join("")).find(contentClass).hide().fadeIn(1000);
@@ -345,9 +347,14 @@
     })
 
     $(".open-image-src").on("click", (e) => {
-        if (e && e.currentTarget && e.currentTarget.src) {
-            window.open(e.currentTarget.src, '_blank')
-        }
+        const imgUrl = e.target.src;
+        $("#img-popup").children("img").attr("src", imgUrl);
+        $("#img-popup").addClass("show");
+        $("#img-popup .modal-bg").on("click", (e) => {
+            e.stopPropagation()
+            $("#img-popup").removeClass("show");
+            $("#img-popup").children("img").attr("src", "");
+        });
     });
 
 })(jQuery); // End of use strict

@@ -137,7 +137,7 @@
 }
 
 .portfolio-modal .modal-body .library-block img {
-  padding: 4rem 3rem 0rem 3rem; 
+  padding: 4rem 3rem 0rem 3rem;
 }
 
 .portfolio-modal.dark-theme {
@@ -10849,3 +10849,30 @@ section#contact form#contactForm :-ms-input-placeholder {
 .scroll::-webkit-scrollbar{height:7px;}/*バーの太さ*/
 .scroll::-webkit-scrollbar-track{background:#dddddd;}/*バーの背景色*/
 .scroll::-webkit-scrollbar-thumb{background:var(--keyclr);}/*バーの色*/
+
+/* Custom image popup modal*/
+#img-popup.show {
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  transition: 0.5s all;
+}
+
+#img-popup .modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 2050;
+  transition: 0.5s all;
+}
+
+#img-popup img {
+  max-width: 90vw;
+  max-height: 90vh;
+  z-index: 2100;
+  transition: 0.5s all;
+}
