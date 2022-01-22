@@ -136,8 +136,70 @@
   font-family: "Montserrat", "Helvetica Neue", Arial;
 }
 
-.portfolio-modal .modal-body .library-block img {
+.portfolio-modal .modal-body .library-block > img {
   padding: 4rem 3rem 0rem 3rem;
+}
+
+.portfolio-modal .modal-body .library-block > div {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+}
+
+/* Auto resize images */
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(1),
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(1) ~ img {
+  max-width: 50%; /* for left 1 item */
+  height: auto;
+  padding: 20px;
+}
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(2),
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(2) ~ img {
+  max-width: 50%;
+  height: auto;
+  padding: 20px;
+}
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(3),
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(3) ~ img {
+  max-width: 33%;
+  height: auto;
+  padding: 20px;
+}
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(4),
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(4) ~ img {
+  max-width: 25%;
+  height: auto;
+  padding: 10px;
+}
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(5),
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(5) ~ img {
+  max-width: 20%;
+  height: auto;
+  padding: 10px;
+}
+
+/* for smart phone */
+@media screen and (max-width: 480px) {
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(1),
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(1) ~ img {
+    padding: 10px;
+  }
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(2),
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(2) ~ img {
+    padding: 10px;
+  }
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(3),
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(3) ~ img {
+    padding: 10px;
+  }
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(4),
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(4) ~ img {
+    padding: 5px;
+  }
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(5),
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(5) ~ img {
+    padding: 5px;
+  }
 }
 
 .portfolio-modal.dark-theme {
@@ -10402,7 +10464,17 @@ div.masthead .masthead-subheading {
   display: block;
   margin: 0 auto;
   overflow: hidden;
+  height: calc(100vw * 9 / (16 * 3));
+  background-color: #11111115;
 }
+
+@media screen and (max-width: 480px) {
+  #portfolio .portfolio-item .portfolio-link {
+    height: calc(100vw * 9 / 16);
+    background-color: #11111115;
+  }
+}
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   flex-direction: column;

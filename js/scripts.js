@@ -67,7 +67,7 @@
     const dummy = "duckblue";
     const dummyDom = $("#dummy");
     const dummyInputDom = dummyDom.find("input")
-    const pass = window.sessionStorage.getItem('dummy');
+    const pass = window.sessionStorage.getItem('dummy');    
     if (dummy === pass) {
         dummyDom.hide();
     } else {
@@ -81,7 +81,7 @@
                 sessionStorage.setItem('dummy', value);
             }
         });
-    }
+    }    
 
     /**
      * projects setting
@@ -165,7 +165,21 @@
                 categories.illust,
                 categories.threeD
             ],
-        },        
+        },
+        {
+            title: "NicorinT",
+            modalRef: "#portfolioModalNICOT",
+            year: "2021",
+            month: "Aug",
+            description: "T-shirt Design",
+            imagePath: "./assets/img/pj-head/MUSICSTATION.jpg",
+            category: [
+                categories.graphic,
+                categories.illust,
+                categories.logo,
+                categories.personal
+            ],
+        },               
         {
             title: "KANJAM",
             modalRef: "#portfolioModalKanjam",
