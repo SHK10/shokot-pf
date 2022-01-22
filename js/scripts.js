@@ -67,15 +67,21 @@
     const dummy = "duckblue";
     const dummyDom = $("#dummy");
     const dummyInputDom = dummyDom.find("input")
-    dummyInputDom.on("keyup", (event) => {
-        if (event.keyCode !== 13) {
-            return;
-        }
-        const value = (dummyInputDom && dummyInputDom[0]) ? dummyInputDom[0].value : "";
-        if (value === dummy) {
-            dummyDom.css("display", "none");
-        }
-    });
+    const pass = window.sessionStorage.getItem('dummy');
+    if (dummy === pass) {
+        dummyDom.hide();
+    } else {
+        dummyInputDom.on("keyup", (event) => {
+            if (event.keyCode !== 13) {
+                return;
+            }
+            const value = (dummyInputDom && dummyInputDom[0]) ? dummyInputDom[0].value : "";
+            if (value === dummy) {
+                dummyDom.hide();
+                sessionStorage.setItem('dummy', value);
+            }
+        });
+    }
 
     /**
      * projects setting
