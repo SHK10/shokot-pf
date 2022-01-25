@@ -102,18 +102,19 @@
     const configs = [
         {
             order: 0,
-            title: "WaterO",
-            modalRef: "#portfolioModalWatero",
-            year: "2020",
+            title: "NicorinT",
+            modalRef: "#portfolioModalNICOT",
+            year: "2021",
             month: "Aug",
-            description: "Logo / extra graphics",
-            imagePath: "./assets/img/pj-head/2008_WaterO.jpg",
+            description: "T-shirt Design",
+            imagePath: "./assets/img/pj-head/2108_NicoT.jpg",
             category: [
                 categories.graphic,
+                categories.illust,
                 categories.logo,
-                categories.personal,
+                categories.personal
             ],
-        },
+        },    
         {
             order: 1,
             title: "Karisome Tengoku  -oct-",
@@ -129,6 +130,20 @@
         },
         {
             order: 2,
+            title: "WaterO",
+            modalRef: "#portfolioModalWatero",
+            year: "2020",
+            month: "Aug",
+            description: "Logo / extra graphics",
+            imagePath: "./assets/img/pj-head/2008_WaterO.jpg",
+            category: [
+                categories.graphic,
+                categories.logo,
+                categories.personal,
+            ],
+        },
+        {
+            order: 3,
             title: "Karisome Tengoku  -Mar-",
             modalRef: "#portfolioModalKarisomeMar",
             year: "2019",
@@ -141,7 +156,7 @@
             ],
         },
         {
-            order: 3,
+            order: 4,
             title: "KASOUKEN no ONNA -season21-", 
             modalRef: "#portfolioModalKasouken21",
             year: "2021", 
@@ -154,6 +169,7 @@
             ], 
         },
         {
+            order: 5,
             title: "MUSIC STATION",
             modalRef: "#portfolioModalMUSICSTATION",
             year: "Until",
@@ -165,22 +181,9 @@
                 categories.illust,
                 categories.threeD
             ],
-        },
+        },           
         {
-            title: "NicorinT",
-            modalRef: "#portfolioModalNICOT",
-            year: "2021",
-            month: "Aug",
-            description: "T-shirt Design",
-            imagePath: "./assets/img/pj-head/MUSICSTATION.jpg",
-            category: [
-                categories.graphic,
-                categories.illust,
-                categories.logo,
-                categories.personal
-            ],
-        },               
-        {
+            order: 6,
             title: "KANJAM",
             modalRef: "#portfolioModalKanjam",
             year: "2018",
@@ -193,6 +196,7 @@
             ],
         },
         {
+            order: 7,
             title: "HIMOMEN",
             modalRef: "#portfolioModalHimomen",
             year: "2018",
@@ -206,6 +210,7 @@
             ],
         },
         {
+            order: 8,
             title: "Air Girl",
             modalRef: "#portfolioModalAirgirl",
             year: "2021",
@@ -217,6 +222,7 @@
             ],
         },
         {
+            order: 9,
             title: "SEKAI TAISOU -2021-",
             modalRef: "#portfolioModalSekaiTaisou",
             year: "2021",
@@ -230,6 +236,7 @@
             ],
         },
         {
+            order: 10,
             title: "ABEMA HILLS",
             modalRef: "#portfolioModalABEMAhills",
             year: "2020",
@@ -244,6 +251,7 @@
             ],
         },
         {
+            order: 11,
             title: "Azatokute nani ga Waruino?",
             modalRef: "#portfolioModalAzatokute",
             year: "2019",
@@ -255,6 +263,7 @@
             ],
         },
         {
+            order: 12,
             title: "Onegai Ranking",
             modalRef: "#portfolioModalOnegai",
             year: "2020",
@@ -266,6 +275,7 @@
             ],
         },
         {
+            order: 13,
             title: "CGDog",
             modalRef: "#portfolioModalCGDog",
             year: "2019",
@@ -279,6 +289,7 @@
             ],
         },
         {
+            order: 14,
             title: "Taiyou to Bolero",
             modalRef: "#portfolioModalTaiyoutoBolero",
             year: "2021",

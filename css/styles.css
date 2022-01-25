@@ -220,7 +220,7 @@
 }
 
 .portfolio-modal.bright-theme .modal-content {
-  background-color: #F2F7F7;
+  background-color: #ded9ce;
 }
 
 /* .portfolio-modal.bright-theme .modal-content .close-modal img {
@@ -10464,7 +10464,7 @@ div.masthead .masthead-subheading {
   display: block;
   margin: 0 auto;
   overflow: hidden;
-  height: calc(100vw * 9 / (16 * 3));
+  height: calc((100vw * 9 / (16 * 3)) - 3px);
   background-color: #11111115;
 }
 
@@ -10946,5 +10946,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   max-width: 90vw;
   max-height: 90vh;
   z-index: 2100;
+  transition: 0.5s all;
+}
+
+.rotate-90 {
+  transition: 0.5s all;
+}
+
+.rotate-90:hover {
+  transform: rotate(90deg);
   transition: 0.5s all;
 }
