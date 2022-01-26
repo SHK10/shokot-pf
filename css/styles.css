@@ -10474,7 +10474,7 @@ div.masthead .masthead-subheading {
   display: block;
   margin: 0 auto;
   overflow: hidden;
-  height: calc((100vw * 9 / (16 * 3)) - 3px);
+  height: calc((100vw * 9 / (16 * 3)) - 5px);
   background-color: #11111115;
 }
 
