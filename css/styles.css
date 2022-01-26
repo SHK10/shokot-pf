@@ -137,7 +137,7 @@
 }
 
 .portfolio-modal .modal-body .library-block > img {
-  padding: 4rem 3rem 0rem 3rem;
+  padding: 0px 20px 0px 20px;
 }
 
 .portfolio-modal .modal-body .library-block > div {
@@ -169,11 +169,17 @@
 .portfolio-modal .modal-body .library-block > div > img:nth-last-child(4) ~ img {
   max-width: 25%;
   height: auto;
-  padding: 10px;
+  padding: 16px;
 }
 .portfolio-modal .modal-body .library-block > div > img:nth-last-child(5),
 .portfolio-modal .modal-body .library-block > div > img:nth-last-child(5) ~ img {
   max-width: 20%;
+  height: auto;
+  padding: 10px;
+}
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(6),
+.portfolio-modal .modal-body .library-block > div > img:nth-last-child(6) ~ img {
+  max-width: calc(16.6666666667%);
   height: auto;
   padding: 10px;
 }
@@ -198,6 +204,10 @@
   }
   .portfolio-modal .modal-body .library-block > div > img:nth-last-child(5),
   .portfolio-modal .modal-body .library-block > div > img:nth-last-child(5) ~ img {
+    padding: 5px;
+  }
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(6),
+  .portfolio-modal .modal-body .library-block > div > img:nth-last-child(6) ~ img {
     padding: 5px;
   }
 }
@@ -10614,7 +10624,7 @@ text-shadow: 1.5px 1.5px 4px #000000;
   width: 100%;
   background-color: white;
   /* margin: 0px -2rem; */
-  padding: 2rem;
+  padding: 0.6rem;
   margin-bottom: 2rem;
 }
 

@@ -102,7 +102,7 @@
     const configs = [
         {
             order: 0,
-            title: "NicorinT",
+            title: "Nico-T Project",
             modalRef: "#portfolioModalNICOT",
             year: "2021",
             month: "Aug",
