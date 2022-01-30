@@ -10627,6 +10627,9 @@ text-shadow: 1.5px 1.5px 4px #000000;
   padding: 0.6rem;
   margin-bottom: 2rem;
 }
+.portfolio-modal .modal-content .image-block.dark-theme {
+  background-color: black;
+}
 
 .portfolio-modal .modal-content .image-block span {
   display: block;

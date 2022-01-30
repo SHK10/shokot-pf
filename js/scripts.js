@@ -157,6 +157,19 @@
         },
         {
             order: 4,
+            title: "Agile project",
+            modalRef: "#portfolioModalAgileProject",
+            year: "2021",
+            month: "Dec",
+            description: "Logo design",
+            imagePath: "./assets/img/pj-head/2112_AgileProject.jpg",
+            category: [
+                categories.logo,
+                categories.personal
+            ],
+        },
+        {
+            order: 5,
             title: "KASOUKEN no ONNA -season21-", 
             modalRef: "#portfolioModalKasouken21",
             year: "2021", 
@@ -169,7 +182,7 @@
             ], 
         },
         {
-            order: 5,
+            order: 6,
             title: "MUSIC STATION",
             modalRef: "#portfolioModalMUSICSTATION",
             year: "Until",
@@ -181,48 +194,9 @@
                 categories.illust,
                 categories.threeD
             ],
-        },           
-        {
-            order: 6,
-            title: "KANJAM",
-            modalRef: "#portfolioModalKanjam",
-            year: "2018",
-            month: "Jul",
-            description: "OP Movie",
-            imagePath: "./assets/img/pj-head/1807_Kanjam.jpg",
-            category: [
-                categories.op,
-                categories.illust
-            ],
         },
         {
             order: 7,
-            title: "HIMOMEN",
-            modalRef: "#portfolioModalHimomen",
-            year: "2018",
-            month: "Jul",
-            description: "OP Movie",
-            imagePath: "./assets/img/pj-head/1807_Himomen.jpg",
-            category: [
-                categories.op,
-                categories.graphic,
-                categories.illust
-            ],
-        },
-        {
-            order: 8,
-            title: "Air Girl",
-            modalRef: "#portfolioModalAirgirl",
-            year: "2021",
-            month: "Feb",
-            description: "Key visual ",
-            imagePath: "./assets/img/pj-head/2102_Airgirl.jpg",
-            category: [
-                categories.graphic,
-            ],
-        },
-        {
-            order: 9,
             title: "SEKAI TAISOU -2021-",
             modalRef: "#portfolioModalSekaiTaisou",
             year: "2021",
@@ -236,7 +210,7 @@
             ],
         },
         {
-            order: 10,
+            order: 8,
             title: "ABEMA HILLS",
             modalRef: "#portfolioModalABEMAhills",
             year: "2020",
@@ -251,7 +225,7 @@
             ],
         },
         {
-            order: 11,
+            order: 9,
             title: "Azatokute nani ga Waruino?",
             modalRef: "#portfolioModalAzatokute",
             year: "2019",
@@ -261,7 +235,47 @@
             category: [
                 categories.logo
             ],
+        },           
+        {
+            order: 10,
+            title: "KANJAM",
+            modalRef: "#portfolioModalKanjam",
+            year: "2018",
+            month: "Jul",
+            description: "OP Movie",
+            imagePath: "./assets/img/pj-head/1807_Kanjam.jpg",
+            category: [
+                categories.op,
+                categories.illust
+            ],
         },
+        {
+            order: 11,
+            title: "HIMOMEN",
+            modalRef: "#portfolioModalHimomen",
+            year: "2018",
+            month: "Jul",
+            description: "OP Movie",
+            imagePath: "./assets/img/pj-head/1807_Himomen.jpg",
+            category: [
+                categories.op,
+                categories.graphic,
+                categories.illust
+            ],
+        },
+        {
+            order: 12,
+            title: "Air Girl",
+            modalRef: "#portfolioModalAirgirl",
+            year: "2021",
+            month: "Feb",
+            description: "Key visual ",
+            imagePath: "./assets/img/pj-head/2102_Airgirl.jpg",
+            category: [
+                categories.graphic,
+            ],
+        },
+        
         {
             order: 12,
             title: "Onegai Ranking",
