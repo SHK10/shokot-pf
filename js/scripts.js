@@ -101,7 +101,7 @@
 
     const configs = [
         {
-            order: 0,
+            order: 13,
             title: "Nico-T Project",
             modalRef: "#portfolioModalNICOT",
             year: "2021",
@@ -129,7 +129,7 @@
             ],
         },
         {
-            order: 2,
+            order: 3,
             title: "WaterO",
             modalRef: "#portfolioModalWatero",
             year: "2020",
@@ -143,7 +143,7 @@
             ],
         },
         {
-            order: 3,
+            order: 2,
             title: "Karisome Tengoku  -Mar-",
             modalRef: "#portfolioModalKarisomeMar",
             year: "2019",
@@ -156,7 +156,7 @@
             ],
         },
         {
-            order: 4,
+            order: 6,
             title: "Agile project",
             modalRef: "#portfolioModalAgileProject",
             year: "2021",
@@ -182,7 +182,7 @@
             ], 
         },
         {
-            order: 6,
+            order: 4,
             title: "MUSIC STATION",
             modalRef: "#portfolioModalMUSICSTATION",
             year: "Until",
@@ -277,7 +277,7 @@
         },
         
         {
-            order: 12,
+            order: 14,
             title: "Onegai Ranking",
             modalRef: "#portfolioModalOnegai",
             year: "2020",
@@ -289,7 +289,7 @@
             ],
         },
         {
-            order: 13,
+            order: 15,
             title: "CGDog",
             modalRef: "#portfolioModalCGDog",
             year: "2019",
@@ -303,7 +303,7 @@
             ],
         },
         {
-            order: 14,
+            order: 16,
             title: "Taiyou to Bolero",
             modalRef: "#portfolioModalTaiyoutoBolero",
             year: "2021",
