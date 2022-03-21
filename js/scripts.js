@@ -129,7 +129,7 @@
             ],
         },
         {
-            order: 3,
+            order: 12,
             title: "WaterO",
             modalRef: "#portfolioModalWatero",
             year: "2020",
@@ -156,7 +156,7 @@
             ],
         },
         {
-            order: 6,
+            order: 9,
             title: "Agile project",
             modalRef: "#portfolioModalAgileProject",
             year: "2021",
@@ -169,7 +169,7 @@
             ],
         },
         {
-            order: 5,
+            order: 6,
             title: "KASOUKEN no ONNA -season21-", 
             modalRef: "#portfolioModalKasouken21",
             year: "2021", 
@@ -237,7 +237,7 @@
             ],
         },           
         {
-            order: 10,
+            order: 3,
             title: "KANJAM",
             modalRef: "#portfolioModalKanjam",
             year: "2018",
@@ -250,7 +250,7 @@
             ],
         },
         {
-            order: 11,
+            order: 6,
             title: "HIMOMEN",
             modalRef: "#portfolioModalHimomen",
             year: "2018",
@@ -264,7 +264,7 @@
             ],
         },
         {
-            order: 12,
+            order: 11,
             title: "Air Girl",
             modalRef: "#portfolioModalAirgirl",
             year: "2021",
