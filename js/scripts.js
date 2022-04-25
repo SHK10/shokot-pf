@@ -101,7 +101,7 @@
 
     const configs = [
         {
-            order: 13,
+            order: 6,
             title: "Nico-T Project",
             modalRef: "#portfolioModalNICOT",
             year: "2021",
@@ -169,7 +169,7 @@
             ],
         },
         {
-            order: 6,
+            order: 5,
             title: "KASOUKEN no ONNA -season21-", 
             modalRef: "#portfolioModalKasouken21",
             year: "2021", 
@@ -224,6 +224,18 @@
                 categories.illust
             ],
         },
+        // {
+        //     order: 9,
+        //     title: "SodaTV",
+        //     modalRef: "#portfolioModalSodaTV",
+        //     year: "2022",
+        //     month: "Mar",
+        //     description: "Set design,BG design",
+        //     imagePath: "./assets/img/pj-head/2006_ABEMAhills.jpg",
+        //     category: [
+        //         categories.threeD
+        //     ],
+        // },
         {
             order: 9,
             title: "Azatokute nani ga Waruino?",
@@ -250,7 +262,7 @@
             ],
         },
         {
-            order: 6,
+            order: 13,
             title: "HIMOMEN",
             modalRef: "#portfolioModalHimomen",
             year: "2018",
