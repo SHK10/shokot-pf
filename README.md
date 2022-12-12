@@ -27,6 +27,9 @@
 
 * Google driveから動画を引っ張ってきたい
   * 下記で設定可能
+    * https://drive.google.com/uc?authuser=0&id={{google driveのid}}&export=download
+      * ex) https://drive.google.com/file/d/1RTIZbTbLGQiO-IB9IFwrfKlBDbzSqsAy/view?usp=share_link
+        * {{google driveのid}} = __1RTIZbTbLGQiO-IB9IFwrfKlBDbzSqsAy__
 
   ```html
   <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1AFcGuE0fKJDK6KR37T_feLTdP7a8Kasc&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video>
