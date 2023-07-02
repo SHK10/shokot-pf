@@ -385,7 +385,7 @@
         projectsEl.find(contentClass).fadeOut(1000);
         projectsEl.empty().append(els.join("")).find(contentClass).hide().fadeIn(1000);
 
-        focusCategory((e && e.path) ? e.path[0] : '#categoryAll');
+        focusCategory((e && e.target) ? `#${e.target.id}` : '#categoryAll');
     }
     $("document").ready(() => projectFilter());
 

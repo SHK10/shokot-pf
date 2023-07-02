@@ -1,6 +1,15 @@
 # This is portfolio site on github pages
 
+## Tools
+* Git
+* VScode
+  * VS code extenstion
+    * Live Server
+    * HTML CSS Support
+
 ## Tips
+* ローカルで変更を確認する方法
+  * 画面右下の"Go live"をクリック (→ブラウザに "http://127.0.0.1:5500" のサイトが立ち上がります。
 * 自分の更新を反映する方法
   * 左のアイコンからSource Controlを選択
   * 表示されたタブからChangesにあるファイルで、更新したいものを＋マークで選択
