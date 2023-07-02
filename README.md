@@ -43,3 +43,4 @@
   $("img").on("contextmenu drag dragstart dragend", () => false);
   $("video").on("contextmenu", () => false);
   ```
+
