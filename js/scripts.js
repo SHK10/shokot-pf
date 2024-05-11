@@ -395,12 +395,21 @@
      * Modal
      */
     $(".modal").on("hidden.bs.modal", () => {
-        const els = $("video");
-        els.toArray().forEach((el) => {
+        const videoEls = $("video");
+        videoEls.toArray().forEach((el) => {
             if(el && el.paused !== undefined && !el.paused) {
                 el.pause()
             }
         });
+
+        const iframeEls = $("iframe");
+        iframeEls.toArray().forEach((el) => {
+            if(el) {
+                const src = el.src;
+                el.src = src;
+            }
+        });
+        
     })
 
     $(".open-image-src").on("click", (e) => {

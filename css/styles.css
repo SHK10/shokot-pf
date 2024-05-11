@@ -772,6 +772,11 @@ mark,
   height: auto;
 }
 
+.img-iframe {
+  width: 100%;
+  border: none;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
