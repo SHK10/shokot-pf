@@ -62,9 +62,9 @@
     $("video").on("contextmenu", () => false);
 
     /**
-     * dummy Login
+     * dummy Login duckblue
      */
-    const dummy = "duckblue";
+    const dummy = "spring";
     const dummyDom = $("#dummy");
     const dummyInputDom = dummyDom.find("input")
     const pass = window.sessionStorage.getItem('dummy');    
