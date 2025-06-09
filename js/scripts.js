@@ -129,6 +129,19 @@
             ],
         },
         {
+            order: 1.5,
+            title: "Uber Eats",
+            modalRef: "#portfolioModalUberEats",
+            year: "2022",
+            month: "Apr",
+            description: "PR movie",
+            imagePath: "./assets/img/pj-head/2204_UberEats.jpg",
+            category: [
+                categories.graphic,
+                categories.threeD
+            ],
+        },
+        {
             order: 12,
             title: "WaterO",
             modalRef: "#portfolioModalWatero",
