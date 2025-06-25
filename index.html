@@ -1,0 +1,2397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="My portfolio" />
+        <meta name="author" content="Shoko Tanaka" />
+        <title>Portfolio -SHOKOT's-</title>
+        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css" >
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Kosugi" rel="stylesheet" type="text/css">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <!-- ここから下が本文 -->
+    <body id="page-top">
+        <div id="dummy" class="dummy-login">
+            <input type="password" placeholder="PASS">
+        </div>
+        <div id="img-popup" class="modal fade">
+            <div class="modal-bg"></div>
+            <img src="" alt="popup image">
+        </div>
+        <!-- ヘッダーのナビゲーション -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/header_btn.png" alt="" /></a> -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <!-- ここに追加して、hrefに#[id名]でページ内を移動可能 -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">WORKS</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">ABOUT</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- タイトルの文 -->
+        <div class="masthead">
+            <img src="./assets/img/myroom.jpg" loading="eager">
+        </div>
+
+        <header class="masthead">
+
+        </header>
+        
+        <!-- ポートフォリオ欄 (画像)　-->
+        <section class="page-section" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">WORKS</h2>
+                    <h3 class="section-subheading text-muted"> </h3>
+                </div>
+                <div id="categories" class="category-btns">
+                    <a id="categoryAll" class="selected" onclick="projectFilter && projectFilter('', event)">ALL</a><span>/</span>
+                    <a id="categoryGraphic" class="" onclick="projectFilter && projectFilter('graphic', event)">GRAPHIC</a><span>/</span>
+                    <a id="categoryLogo" class="" onclick="projectFilter && projectFilter('logo', event)">LOGO</a><span>/</span>
+                    <a id="categoryOp" class="" onclick="projectFilter && projectFilter('op', event)">OP</a><span>/</span>
+                    <a id="categoryIllust" class="" onclick="projectFilter && projectFilter('illust', event)">ILLUST.</a><span>/</span>
+                    <a id="categoryThreeD" class="" onclick="projectFilter && projectFilter('threeD', event)">3D</a><span>/</span>
+                    <a id="categoryPersonal" class="" onclick="projectFilter && projectFilter('personal', event)">PERSONAL</a>
+                </div>
+                <!-- ↓ jsからコンテンツ生成 -->
+                <div id="projects" class="row business-block"></div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Outline of my life.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>November 10th, 1993</h4>
+                                <h4 class="subheading">Born in Saitama</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>April 2009</h4>
+                                <h4 class="subheading">Municipal Urawa High School</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Enjoyed foot ball.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">OCHABI</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Touched art industry...</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <!-- Link modal! -->
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModalSchollDays">
+                                <div class="timeline-heading">
+                                    <h4>April 2012</h4>
+                                    <h4 class="subheading">Musashino Art University</h4>
+                                </div>
+                            </a>
+                            <div class="timeline-body"><p class="text-muted">▲ Click here! ▲</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>April 2017</h4>
+                                <h4 class="subheading">TV Asahi Create</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Started CG Design.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                To be
+                                <br />
+                                continued!
+                                <br />
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- スキルや経験などを記述する欄 -->
+
+        <!-- <section class="page-section bg-light" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Skills</h2>
+                    <h3 class="section-subheading text-muted">A part of my experiences</h3>
+                </div>
+                <div class="row text-center strong-red">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-user-tie fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Adobe Illustrator</h4>
+                        <p class="text-muted text-left text-block">
+                            Since joining <a href="https://www.scsk.jp/index_en.html">TV asahi create Corporation</a> nearly five years ago as an CG designer.
+                        </p>
+                    </div>
+                    <div class="col-md-4 strong-red">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-robot fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">SKILL text</h4>
+                        <p class="text-muted text-left text-block">
+                            Since joining <a href="https://www.scsk.jp/index_en.html">TV asahi create Corporation</a> nearly five years ago as an CG designer.
+                        </p>
+                    </div>
+                    <div class="col-md-4 strong-red">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Full Stack Experience</h4>
+                        <p class="text-muted text-left text-block mb-0">
+                            Since joining <a href="https://www.scsk.jp/index_en.html">TV asahi create Corporation</a> nearly five years ago as an CG designer.                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- About-->
+<!--         
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2009-2011</h4>
+                                <h4 class="subheading">Our Humble Beginnings</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">An Agency is Born</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2012</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2014</h4>
+                                <h4 class="subheading">Phase Two Expansion</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Be Part
+                                <br />
+                                Of Our
+                                <br />
+                                Story!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+
+
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">Copyright © Shoko tanaka 2021</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <!-- <a class="btn btn-dark btn-social mx-2" href="https://github.com/gizumon"><i class="fab fa-github"></i></a> -->
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/shoko.tanaka.9235"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/tomoatsu-sekikawa-3a335b196/"><i class="fab fa-linkedin-in"></i></a> -->
+                    </div>
+                    <!-- <div class="col-lg-4 text-lg-right">
+                        <a class="mr-3" href="#!">Privacy Policy</a>
+                        <a href="#!">Terms of Use</a>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+        <!-- Modal 1-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalLINEPay" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">LINE Pay</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1pvaERlm4_gjR42uI_W0pJjANZZGF58VX/preview" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">New Feature Promo Video</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">LINE Payの送金に関する新機能紹介動画を制作しました。<br>
+                                                全体で1本の動画として完結しつつ用途に応じて各セクション単体でも使用できるよう、4つの動画に分割しても成立するような構成を設計しました。<br>
+                                                I designed the video to work as a complete piece, while also making sure each of the four sections could stand on its own.
+                                            <strong>
+                                                    <div class="project-meta text-left">
+                                                        <br>
+                                                        <strong>Roles：</strong><span class="meta-detail">Planning, Visual Design, 3D, Motion Graphics, Narration Production, Sound Direction</span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">2 months (5 versions)</span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_1.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_2.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_4.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_5.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_6.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_7.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_8.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_3.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="container explain-block">
+                                        <div class="comment-block">
+                                            <p class="text-left"><br>
+                                                送金をテーマに、¥マークから「送る」へ変化するモーションを考案しました。<br>
+                                                I created a motion graphic themed around money transfer, where the ¥ symbol transforms into the word “Send.<br>
+                                                <br>
+                                            </p>       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalYmap" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Yahoo Map</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-Ymap/2404_MeijiJingu.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Meiji-jingu</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                Yahoo!マップ・Land Mark Tower プロジェクトの試作のため、ネット上の画像を参考にモデリングを行いました。
+                                                <!-- <br> -->
+                                                <!-- I designed the video to work as a complete piece, while also making sure each of the four sections could stand on its own.<br> -->
+                                                    <div class="project-meta text-left">
+                                                        <strong>Roles：</strong><span class="meta-detail">3D(Modering, Texturing, Shading, Lighting, Rendering)</span><br>
+                                                        <!-- <strong>Production Period：</strong><span class="meta-detail">2 months (5 versions)</span><br> -->
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-Ymap/2404_GinzaWAKO.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Ginza WAKO</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                <!-- 構想中Land Mark Tower Projectの試作のため、ネット上の画像を参考にモデリングを行いました。 -->
+                                                <!-- <br> -->
+                                                <!-- I designed the video to work as a complete piece, while also making sure each of the four sections could stand on its own.<br> -->
+                                                    <div class="project-meta text-left">
+                                                        <strong>Roles：</strong><span class="meta-detail">3D(Modering, Texturing, Shading, Lighting, Rendering)</span><br>
+                                                        <!-- <strong>Production Period：</strong><span class="meta-detail">2 months (5 versions)</span><br> -->
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-Ymap/2505_Hachikou.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Shibuya Hachikou</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                    <div class="project-meta text-left">
+                                                        <strong>Roles：</strong><span class="meta-detail">3D(Modering, Texturing, Shading, Lighting, Rendering)</span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">5 days</span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-Ymap/2411_Budokan.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Budoukan</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                <!-- 構想中Land Mark Tower Projectの試作のため、ネット上の画像を参考にモデリングを行いました。 -->
+                                                <!-- <br> -->
+                                                <!-- I designed the video to work as a complete piece, while also making sure each of the four sections could stand on its own.<br> -->
+                                                    <div class="project-meta text-left">
+                                                        <strong>Roles：</strong><span class="meta-detail">3D(Modering, Texturing, Shading, Lighting, Rendering)</span><br>
+                                                        <!-- <strong>Production Period：</strong><span class="meta-detail">5 days</span><br> -->
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-Ymap/2403_SkyTree_1.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">SKY Tree</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                <!-- 構想中Land Mark Tower Projectの試作のため、ネット上の画像を参考にモデリングを行いました。 -->
+                                                <!-- <br> -->
+                                                <!-- I designed the video to work as a complete piece, while also making sure each of the four sections could stand on its own.<br> -->
+                                                    <div class="project-meta text-left">
+                                                        <strong>Roles：</strong><span class="meta-detail">3D(Modering, Texturing, Shading, Lighting, Rendering)</span><br>
+                                                        <!-- <strong>Production Period：</strong><span class="meta-detail">5 days</span><br> -->
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-Ymap/2506_GINZASIX.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">GINZA SIX</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                <!-- 構想中Land Mark Tower Projectの試作のため、ネット上の画像を参考にモデリングを行いました。 -->
+                                                <!-- <br> -->
+                                                <!-- I designed the video to work as a complete piece, while also making sure each of the four sections could stand on its own.<br> -->
+                                                    <div class="project-meta text-left">
+                                                        <strong>Roles：</strong><span class="meta-detail">3D(Modering, Texturing, Shading, Lighting, Rendering)</span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">7 days</span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-Ymap/2506_Kabukicho.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Shinjuku Kabukicho</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                <!-- 構想中Land Mark Tower Projectの試作のため、ネット上の画像を参考にモデリングを行いました。 -->
+                                                <!-- <br> -->
+                                                <!-- I designed the video to work as a complete piece, while also making sure each of the four sections could stand on its own.<br> -->
+                                                    <div class="project-meta text-left">
+                                                        <strong>Roles：</strong><span class="meta-detail">3D(Modering, Texturing, Shading, Lighting, Rendering)</span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">5 days</span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                    <!-- <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-Ymap/2404_MeijiJingu.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_2.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_4.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_5.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_6.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_7.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_8.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2402_LINEPay_3.jpg" alt="" />
+                                        </div>
+                                    </div> -->
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalHelloFriends" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Hello Friends!</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1-bLBzEMrL2dZdZzIYz8uQV_7mwL8-VH0/preview" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Hello Friends! – OOH Promo Video</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">LINEヤフー主催toBイベント Hello Friends! 2025<br>
+                                                一般のお客様にもイベントの魅力が伝わるよう分かりやすさとキャッチーさを意識しOOH用広告ムービーを制作しました。<br>
+                                                六本木ヒルズのメトロハット内にあるスクリーンで放映され、期間中繰り返し上映されました。<br>
+                                                A B2B-focused event hosted by LINE Yahoo, held over two days in May 2025.To appeal to the general public as well, I created a pop-style OOH promotional video to highlight the event’s charm.This video was displayed on the large screen inside Roppongi Hills’ Metro Hat, and was repeatedly broadcast throughout the day during the campaign period.<br><br>
+                                                    <div class="project-meta text-left">
+                                                        <strong>Venue：</strong><span class="meta-detail">Roppongi Hills</span><br>
+                                                        <strong>Roles：</strong><span class="meta-detail">Visual Design, Storyboarding, 3D icons Modeling, Motion Graphics, Narration Production, Sound Direction ,3D character animation  Direction ,(Everything except 3D character animation)</span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">2 months</span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person (+ 3D character animators)</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2505_HelloFriends_1.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2505_HelloFriends_3.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2505_HelloFriends_4.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2505_HelloFriends_6.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2505_HelloFriends_7.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2505_HelloFriends_8.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <br><br><br><br><br><br>
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2505_HelloFriends_icon_1.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">3D icon Design</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">OOH用の3Dモデルの他、OP・印刷物用の3Dモデルの制作も担当しました。<br>
+                                                    <div class="project-meta text-left">
+                                                        <strong>Roles：</strong><span class="meta-detail">3D icons Modeling</span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">4 days</span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container library-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2505_HelloFriends_icon_2.jpg" alt="" />
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://pages.lycbiz.com/hellofriends2025/online/" target="_blank">Event HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalLINESkimani" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">LINE Skimani</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2204_LINESkimani_5.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Graphics</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">LINEスキマニ企業向けPRをテーマにした課題<br>
+                                                既存のビジュアルトーンを参考にイラスト・デザイン制作を行いました。
+                                                    <div class="project-meta text-left">
+                                                        <br>
+                                                        <strong>Roles：</strong><span class="meta-detail">Grapphic Design, Illustration</span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">3 days</span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2204_LINESkimani_1.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2204_LINESkimani_2.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2204_LINESkimani_3.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2204_LINESkimani_4.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="container explain-block">
+                                        <div class="comment-block">
+                                            <p class="text-left"><br>
+                                                企業の方々に安心してご利用いただけるよう、3色のブランドカラーの中でも信頼感のあるブルーをメインに使用しました。<br>
+                                                グラフィックは一棟のビルをイメージし、各窓に人々を配置。4枚の画がつながるようデザインしています。<br>
+                                                また「悩みで曇った窓を少しずつ掃除していく」イメージとして、斜めのラインをモチーフに取り入れました。
+                                            </p>       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalSeed" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">LINE Seed</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1fyfVKYrWoMH6ekaioHA2oNJ3jZI39lhO/preview" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">LINE Seed Font – Concept Video</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">LINE社オリジナルフォントのコンセプトムービーを制作しました。<br>
+                                                担当パートのデザイン・モーションに加え、全体の最終コンポジットおよび調整作業を担当しました。<br>
+                                                Our team created a concept movie for LINE’s original font.In addition to designing and animating my assigned sections, I was also responsible for the final compositing and overall adjustments.
+                                            <strong>
+                                                    <div class="project-meta text-left">
+                                                        <br>
+                                                        <strong>Roles：</strong><span class="meta-detail">Visual Design, Storyboarding, Motion Graphics, Offered creative ideas for sound</span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">3 months</span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">5 people</span><br>
+                                                        <strong>My parts：26s-33s, 45s-50s, 69s-71s</strong><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2210_LINE_Seed_1.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2210_LINE_Seed_2.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2210_LINE_Seed_3.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2210_LINE_Seed_4.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2210_LINE_Seed_5.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2210_LINE_Seed_6.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2210_LINE_Seed_7.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2210_LINE_Seed_8.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="container explain-block">
+                                        <div class="comment-block">
+                                            <p class="text-left"><br>
+                                                フォント制作の過程に遊びごころを感じさせるカットの提案を行いました。<br>
+                                                I proposed a cut that adds a sense of playfulness to the process of creating the Fonts.<br>
+                                                <br>
+                                            </p>       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 6-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalLYBizConcept" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">LY BIZ conference</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1DFsSd1ysXL8qS-fMtMgn7cpu1sAxX_Pr/preview" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">LINE Yahoo! Concept Video</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">LINEヤフー合併時のコンセプトムービーを制作しました。<br>
+                                                前半部分のデザイン・ディレクティングとモーション制作を担当しました。<br>
+                                            <strong>
+                                                    <div class="project-meta text-left">
+                                                        <br>
+                                                        <strong>Roles：</strong><span class="meta-detail">Visual Design, Motion Graphics, Motion Directing (First Half)</span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">1.5 months </span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">4 peaple</span><br>
+                                                        <strong>My parts：0s - 01m22s</strong><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2310_BIZconcept_1.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2310_BIZconcept_2.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2310_BIZconcept_3.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2310_BIZconcept_5.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <br><br><br><br><br><br>
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/17qQSani8rEKDc-ST0t9mHYzym9xh7Lg5/preview" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Event Opening Video</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">合併キックオフ時に放映されたオープニング映像のモーションを担当しました。<br>
+                                            <strong>
+                                                    <div class="project-meta text-left">
+                                                        <br>
+                                                        <strong>Roles：</strong><span class="meta-detail">Visual Design, Motion Graphics</span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">1.5 months </span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">2 peaple</span><br>
+                                                        <strong>My parts：0s-5s, 36s-47s</strong><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 7-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalLINEWALK" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">LINE WALK</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1F6fa3-VfzwCqwsGJrAyZmvPiXS1sSOc0/preview" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">App Launch Animation</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">LINE WALK起動時のアニメーションを制作しました。<br>
+                                                    <div class="project-meta text-left">
+                                                        <br>
+                                                        <strong>Roles：</strong><span class="meta-detail">Motion Graphics, 3D(coin) </span><br>
+                                                        <strong>Production Period：</strong><span class="meta-detail">1 months</span><br>
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person</span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 8-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalLYDesign" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">LY Design HUB</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1gXv3r93hejOTsj_wX97PjJUwjzUylHwa/preview" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Main (3ver.)</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                    <div class="project-meta text-left">
+                                                        <br>
+                                                        <strong>Roles：</strong><span class="meta-detail">Motion Graphics</span><br>
+                                                        <!-- <strong>Production Period：</strong><span class="meta-detail">2 months</span><br> -->
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person </span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1ZHPFu0osQl4uNwS3rqlhaitvUSL1rgor/preview" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Design Style (Clear Simplicity / Perfect Quality / Fast Feedback)</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                    <div class="project-meta text-left">
+                                                        <br>
+                                                        <strong>Roles：</strong><span class="meta-detail">Motion Graphics</span><br>
+                                                        <!-- <strong>Production Period：</strong><span class="meta-detail">2 months</span><br> -->
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person </span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1crexfDR9kRBDkNqvhQYaJATtPuEVZvYN/preview" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Getting Started (6parts)</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                    <div class="project-meta text-left">
+                                                        <br>
+                                                        <strong>Roles：</strong><span class="meta-detail">Motion Graphics</span><br>
+                                                        <!-- <strong>Production Period：</strong><span class="meta-detail">2 months</span><br> -->
+                                                        <strong>Designed by：</strong><span class="meta-detail">1 person </span><br>
+                                                    </div>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 20-->
+        <div class="portfolio-modal modal fade" id="portfolioModalNICEFLIGHT" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">NICE FLIGHT!</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1aaGYvGBEV26SGP3ZL-1xWlNpSTzeNAA6/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1tbUKVU_nllvyNUXSDC5ANR8jNXGWTOLn&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Teaser Movie (include OP movie)</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>グラフィックデザイン・コンテ・モーション</li>
+                                            <li><strong>制作期間 ： </strong>20 days</li>
+                                            <li><strong>作業時間 ： </strong>12 days</li>
+                                            <li><strong>作業人数 ： </strong>02 [Me:Design & Animation(00:03〜00:21)]</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2012 / 07 〜</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                玉森 裕太さん、中村アンさん主演ドラマ。<br>
+                                                キービジュアルをもとにビジュアルとモーションを展開。OP movieとTeaser制作をリードしました。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="container library-block">
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2205_NICEFLIGHT-01.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2205_NICEFLIGHT-02.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2205_NICEFLIGHT-03.jpg" alt="" /><br>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://www.tv-asahi.co.jp/niceflight/" target="_blank">Program HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Modal 0-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalNICOT" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Nico-T project</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-head/2108_NicoT.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">LOGO,Illustration and Goods design</h4>
+                                        <ul class="text-left">
+                                            <!-- <li><strong>制作期間 ： </strong>07 days</li>
+                                            <li><strong>作業時間 ： </strong>05 days</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2019/10 〜 2020</li> -->
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">［個人活動］
+                                                仁琴(Nico)ちゃんの誕生記念プロジェクト。<br>
+                                                オリジナルロゴ・手書きタイポ・イラストを基にデザイン展開。Tシャツやバッグ等を制作しました。<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="rotate-90 img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/logo_info_1.jpg" alt="" />
+                                            <img class="rotate-90 img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/logo_info_2.jpg" alt="" />
+                                            <img class="rotate-90 img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/logo_info_3.jpg" alt="" />
+                                            <img class="rotate-90 img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/logo_info_4.jpg" alt="" />
+                                            <img class="rotate-90 img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/logo_info_5.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <div class="comment-block">
+                                            <p class="text-left">かたかなの"ニコ"を９０度回転させたら > > > ニコちゃんマーク☺︎</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space bottom-space-small"></div>    
+                                    <h4 class="text-left">Design Idea</h4>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_A.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_B.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_C.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_D.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_E.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_F.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_G.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_H.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_I.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_J.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_K.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_L.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_m.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_MM.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_o.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_p.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_Q.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_R.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_S.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/Nicorin_T_T.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space"></div>
+                                    <div class="image-block">                                
+                                        <img class="img-fluid" loading="eager" src="assets/img/pj-NicoT/IMG_8700.jpg" alt="img" />
+                                    </div>
+                                    <div class="container">
+                                        <h4 class="text-left">Snapshot</h4>
+                                        <!-- <div class="comment-block">
+                                            <p class="text-left">完成品</p>
+                                        </div> -->
+                                    </div>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/10.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/11.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/15.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/16.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/30.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/31.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/20.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/21.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/35.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/36.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/25.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/26.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/70.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/80.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/81.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/42.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/40.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/41.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/90.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/91.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/45.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/46.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/55.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/56.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/62.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/61.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/60.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/50.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-NicoT/51.jpg" alt="" />
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 1-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalWatero" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">WaterO</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Logo-01.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Company Logo</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>名称考案・コンセプト立案・ビジュアルイメージ提案・デザイン</li>
+                                            <li><strong>制作期間 ： </strong>14 days</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">ＷaterとＯxygenを組み合わせた造語としてＷaterＯ(ウォテロ)という社名・商品名の考案。<br>
+                                            日本の代表的犬種である柴犬をモチーフとし、Ｗaterの Ｗ とＯxygen の Ｏ をあしらいロゴを制作。<br>
+                                            その後ロゴデザインを元に以下ボトルパッケージ、三つ折り商品パンフレット、その他クラウドファンディングサイトなどのデザインをしました。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space"></div>
+                                    <div class="bottom-space"></div>
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Bottledesign_01.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Bottle design</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>ビジュアルイメージ提案・デザイン</li>
+                                            <!-- <li><strong>制作期間 ： </strong>14 days</li> -->
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">爽やかでありながら、高級感を感じてもらえるようなデザインを目指しました。<br>
+                                                ラベル正面にある縦の透明ラインは「水の流れ」をイメージし、身体の中にスーッとキレイなお水が流れていく感覚を表現しています。<br>
+                                                ペットボトルを入れる容器として、段ボールも３パターン制作しました。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Bottledesign_02.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Bottledesign-all.jpg" alt="" />
+                                        </div>
+                                        <div> 
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Bottledesign_03.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Bottledesign_04.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Bottledesign_05.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Boxdesign-01.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Boxdesign-02.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Boxdesign-03.jpg" alt="" />
+                                        </div>
+                                    </div>    
+                                    <div class="bottom-space"></div>
+                                    <div class="bottom-space"></div>
+                                    <div class="image-block">
+                                        <img class="img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Pamphlet_00.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Pamphlet design</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>デザイン提案・イラスト・グラフィックデザイン</li>
+                                            <!-- <li><strong>TIME ： </strong>7 days</li> -->
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">商品に同封したり、イベントなどで配布するための３つ折パンフレットのデザインをしました。<br>
+                                            </p>
+                                        </div>
+                                        <!-- <div class="container library-block">
+                                            <div>   
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Pamphlet-02.png" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Pamphlet-01.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="bottom-space"></div> -->
+                                    </div>    
+                                    <div class="bottom-space"></div>
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_banner.png" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Funding site design</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>デザイン提案・イラスト・グラフィックデザイン</li>
+                                            <!-- <li><strong>TIME ： </strong>12 days</li> -->
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">資金調達のためのクラウドファンディングサイトに使用する<br>
+                                            バナー・紹介グラフィック・タイトルなどデザイン。
+                                            </p>
+                                        </div>
+                                        <!-- <div class="container library-block">
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_01.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_02.jpg" alt="" />
+                                            <br>
+                                            <div>
+                                                <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_title_00.png" alt="" />
+                                                <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_title_01.png" alt="" />
+                                            </div>
+                                            <div>
+                                                <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_title_02.png" alt="" />
+                                                <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_title_03.png" alt="" />
+                                            </div>
+                                            <div>
+                                                <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_title_04.png" alt="" />
+                                                <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_title_05.png" alt="" />
+                                            </div>
+                                            <div>
+                                                <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_title_06.png" alt="" />
+                                                <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_title_07.png" alt="" />
+                                            </div>
+                                            <div>
+                                                <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_title_08.png" alt="" />
+                                                <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2008_WaterO_Funding_title_09.png" alt="" />
+                                            </div>
+                                        </div> -->
+                                    </div>    
+                                    <div class="container">
+                                        <div class="content-block container">
+                                            <hr width="0" size="10">
+                                            <p class="text-center text-block">
+                                                【　<a href="https://watero.pet/" target="_blank">WaterO official store</a>　】
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 16-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalUberEats" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Uber Eats PV</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1OS5MpYPHv2ey-6W5ZpDiteLwAcASFkdA&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1OS5MpYPHv2ey-6W5ZpDiteLwAcASFkdA/preview" allow="autoplay"></iframe>
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">任意アプリのPR Movie (業務外)</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>企画・ビジュアルイメージ・グラフィックデザイン・モーション</li>
+                                            <li><strong>制作期間 ： </strong>14 days (with other assignments and a day job)</li>
+                                            <li><strong>作業人数 ： </strong>01</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">今では当たり前のサービスにもなりつつあるUber Eatsですが、<strong>「家から一歩も出ずに飲食店のメニューを楽しめる」</strong>という点で<br>
+                                            <strong>インドア派や外出が困難な方々にとっては夢のようなサービスである</strong>という発想から演出を行いました。</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="container library-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2204_UberEats_4.jpg" alt="" />
+                                        <br>
+                                    </div>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2204_UberEats_1.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2204_UberEats_2.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2204_UberEats_3.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2204_UberEats_5.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="comment-block">
+                                            <h4 class="text-left">表現したかった点</h4>
+                                            <p class="text-left">
+                                                <strong>1.</strong> 自宅の外に出ずレストランの料理が注文でき、食事の選択肢が増えるワクワク感<br>
+                                                <strong>2.</strong> 簡単に注文ができ、すぐに配達されるテンポの良さ<br>
+                                                <strong>3.</strong> Uber Eats のブランドイメージ (現代っぽさ・親しみやすさ・キミドリ)<br>
+                                                <br>
+                                                また、スタンドライトの灯りが点いて映像が始まりロゴベースが暗くなって完結する表現で夢だったかのような印象を与えたいと考えました。</p>       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalKarisomeOct" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Karisome Tengoku</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=10QBDSsumXqsy3p9InLmiiUH5ahMDBetz&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/10QBDSsumXqsy3p9InLmiiUH5ahMDBetz/preview" allow="autoplay"></iframe>
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Opening Movie</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>ビジュアルイメージ提案・コンテ・グラフィックデザイン・モーション</li>
+                                            <li><strong>制作期間 ： </strong>07 days</li>
+                                            <li><strong>作業時間 ： </strong>05 days</li>
+                                            <li><strong>作業人数 ： </strong>02 [Me : Main designer]</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2019/10 〜 2020</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">深夜からゴールデン枠へ改変の際に新たなOPイメージを自主提案。<br>
+                                                番組Pに採用して頂き制作しました。</p>
+                                        </div>
+                                    </div>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1910_Karisome_1.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1910_Karisome_2.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1910_Karisome_3.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1910_Karisome_4.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1910_Karisome_5.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1910_Karisome_6.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block" loading="eager" src="assets/img/pj-content/1910_Karisome_7.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="image-block">                                
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1910_Karisome_HPbg.png" alt="Close modal" />
+                                    </div>
+                                    <div class="container">
+                                        <h4 class="text-left">BG graphic</h4>
+                                        <div class="comment-block">
+                                            <p class="text-left">ＯＰに合わせてトリキリベースを作成。当時ＨＰでも背景として使用されました。</p>
+                                        </div>
+                                        
+                                        <div class="content-block container">
+                                            <hr width="0" size="10">
+                                            <p class="text-center text-block">
+                                                【　<a href="https://www.tv-asahi.co.jp/matsuari/" target="_blank">Program HP</a>　】
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalKarisomeMar" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Karisome Tengoku</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1r2O0YA3ggKgREtMrJnJ8DjRzXbmFE-4N&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1r2O0YA3ggKgREtMrJnJ8DjRzXbmFE-4N/preview" allow="autoplay"></iframe>
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Opening Movie</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>イラスト・グラフィックデザイン・コンテ・モーション</li>
+                                            <li><strong>制作期間 ： </strong>20 days</li>
+                                            <li><strong>作業時間 ： </strong>13 days</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                            <li><strong>ＯＡ　　 ： </strong>2019/03 〜 2019/10</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">SP放送用にOP作成。その後レギュラー放送でも使っていただきました。</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="container library-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1903_Karisome_1.jpg" alt="" />
+                                        <br>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1903_Karisome_2.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1903_Karisome_3.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1903_Karisome_4.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1903_Karisome_5.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://www.tv-asahi.co.jp/matsuari/" target="_blank">Program HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade " id="portfolioModalAgileProject" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Agile project</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2112_AgileProject_a.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">LOGO design</h4>
+                                        <ul class="text-left">
+                                            <li><strong>制作期間 ： </strong>05 days</li>
+                                            <li><strong>作業時間 ： </strong>02 days</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">Agile project：柔軟性があり、
+                                                変化するビジネスニーズにも俊敏に対応できる働き方を目指す取り組み。<br><br>
+                                                "Agile"のイメージより、サイクルを描く矢印でaとpの頭文字を表現しました。<br>
+                                                またプロジェクトコンセプトより、光の３原色（どんな色も作れる・素早い)を裏テーマとしました。<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space bottom-space-small"></div>    
+                                    <h4 class="text-left">Other Idea...</h4>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2112_AgileProject_b.png" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2112_AgileProject_c.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModalKasouken21" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Kasouken no Onna season 21</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1wJmSDwp6iKI7EojLW4DttHnbclE1XqIT&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1wJmSDwp6iKI7EojLW4DttHnbclE1XqIT/preview" allow="autoplay"></iframe>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Opening Movie</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>グラフィックデザイン・モーション</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                            <li><strong>制作期間 ： </strong>26 days</li>
+                                            <li><strong>作業時間 ： </strong>12 days</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2021/10/14 〜</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">現行のOP映像です。<br>
+                                            コンセプトアート担当の作成コンテを元に、ドラマ内容を形取るデザイン要素を付け加えてデザイン・制作しました。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://www.tv-asahi.co.jp/kasouken21/" target="_blank">Program HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5-->
+        <div class="portfolio-modal modal fade dark-theme" id="portfolioModalMUSICSTATION" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">MUSIC STATION</h2>
+                                <div class="modal-body">
+                                    <div class="image-block dark-theme">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1fZmokzCRbHaEPyPsvkMGL2NPo4wLUSO3/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1fZmokzCRbHaEPyPsvkMGL2NPo4wLUSO3&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Aimer / 残響散歌</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>アーティストバックLED映像のプランニング・3D制作・デザイン・モーション</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                            <li><strong>制作期間 ： </strong>10 days</li>
+                                            <li><strong>作業時間 ： </strong>08 days</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2022/02/11</li>
+                                        </ul>
+                                        <div class="bottom-space-small"></div>
+                                    </div>
+                                    <div class="bottom-space"></div>
+                                    <div class="iframe-block">
+                                        <!-- <iframe width="560" height="315" src="https://drive.google.com/uc?authuser=0&id=1RTIZbTbLGQiO-IB9IFwrfKlBDbzSqsAy&export=download" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1RTIZbTbLGQiO-IB9IFwrfKlBDbzSqsAy/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1RTIZbTbLGQiO-IB9IFwrfKlBDbzSqsAy&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">NiziU / Take a picture!</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>アーティストバックLED映像のプランニング・3D制作・デザイン・モーション</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                            <li><strong>制作期間 ： </strong>09 days</li>
+                                            <li><strong>作業時間 ： </strong>07 days</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2021/04/09</li>
+                                        </ul>
+                                        <div class="bottom-space"></div>
+                                    </div>
+                                    <div class="image-block dark-theme">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/11nobfJwaxIbqbUAeH9rzPnNrfbMgv7Uk/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=11nobfJwaxIbqbUAeH9rzPnNrfbMgv7Uk&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>        
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Eito / Happy ni nareyo</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>アーティストバックLED映像のプランニング/ディレクション・イラスト・デザイン・モーション</li>
+                                            <li><strong>作業人数 ： </strong>02 [Me : lead designer]</li>
+                                            <li><strong>制作期間 ： </strong>05 days</li>
+                                            <li><strong>作業時間 ： </strong>04 days</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2021/01/22</li>
+                                        </ul>
+                                        <div class="bottom-space"></div>
+                                    </div>
+                                    <div class="image-block dark-theme">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1Igc4SHFZB7OfI7srEVv9fL1h70EYeOGh/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1Igc4SHFZB7OfI7srEVv9fL1h70EYeOGh&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                        <div class="container explain-block">
+                                        <h4 class="text-left">Hinatazaka46 / kimishika katan</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>アーティストバックLED映像のプランニング/ディレクション・3D制作・デザイン・モーション</li>
+                                            <li><strong>作業人数 ： </strong>02 [Me : lead designer]</li>
+                                            <li><strong>制作期間 ： </strong>05 days</li>
+                                            <li><strong>作業時間 ： </strong>05 days</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2021/05/28</li>
+                                        </ul>
+                                        <div class="bottom-space"></div>
+                                    </div>
+                                    <div class="image-block dark-theme">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1U343tw19C6Pnuqn5PCFdDbZRchCLU-h3/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1U343tw19C6Pnuqn5PCFdDbZRchCLU-h3&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Hey! Say! JUMP / Gunjou Runaway</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>アーティストバックLED映像のプランニング/ディレクション・3D制作・デザイン・モーション</li>
+                                            <li><strong>作業人数 ： </strong>02 [Me : lead designer]</li>
+                                            <li><strong>制作期間 ： </strong>10 days</li>
+                                            <li><strong>作業時間 ： </strong>04 days</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2021/08/20</li>
+                                        </ul>
+                                        <div class="bottom-space-small"></div>
+                                    </div>
+                                    <div class="image-block dark-theme">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1WKFCcqM3818DSxd65yHDdWI_kRW1R6Xx/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1WKFCcqM3818DSxd65yHDdWI_kRW1R6Xx&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>    
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">SixTONES / 共鳴</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>アーティストバックLED映像のプランニング/ディレクション・3D制作・デザイン・モーション</li>
+                                            <li><strong>作業人数 ： </strong>02 [Me : lead designer]</li>
+                                            <li><strong>制作期間 ： </strong>05 days</li>
+                                            <li><strong>作業時間 ： </strong>04 days</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2022/03/04</li>
+                                        </ul>
+                                        <div class="bottom-space"></div>
+                                    </div>
+                                    <div class="image-block dark-theme">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1ETyR5lW3eBSGe9VlbGAIuv2iLWRWTSGM/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1ETyR5lW3eBSGe9VlbGAIuv2iLWRWTSGM&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>    
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">ARASHI / kaito</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>アーティストバックLED映像のデザイン・モーション</li>
+                                            <li><strong>作業人数 ： </strong>03 [Me : designer]</li>
+                                            <li><strong>制作期間 ： </strong>10 days</li>
+                                            <li><strong>作業時間 ： </strong>06 days</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2020/07/24</li>
+                                        </ul>
+                                        <div class="bottom-space"></div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="comment-block">
+                                        <p class="text-left history">
+                                                担当履歴<br>
+                                                2022年03月　SixTONES<br>
+                                                2022年02月　Aimer <br>
+                                                2022年01月　優里 <br>
+                                                2021年12月　[SUPER LIVE] YOASOBI <br>
+                                                2021年12月　[SUPER LIVE] NiziU <br>
+                                                2021年12月　[SUPER LIVE] 日向坂46 <br>
+                                                2021年08月　Hey! say! JUMP <br>
+                                                2021年06月　緑黄色社会 <br>
+                                                2021年05月　日向坂46 <br>
+                                                2021年04月　NiziU <br>
+                                                2021年03月　DA PUMP <br>
+                                                2021年02月　関ジャニ∞ <br>
+                                                2021年01月　瑛人 <br>
+                                                2020年12月　[SUPER LIVE]　Perfume <br>
+                                                2020年12月　[SUPER LIVE]　E-girls <br>
+                                                2020年12月　[SUPER LIVE]　AI <br>
+                                                2020年10月　木梨憲武 <br>
+                                                2020年10月　上白石萌音 <br>
+                                                2020年09月　Kis-My-Ft2 <br>
+                                                2020年09月　V6 <br>
+                                                2020年09月　上白石萌音 <br>
+                                                2020年08月　Sumika <br>
+                                                2020年07月　嵐 <br>
+                                                2020年07月　BiSH <br>
+                                                2020年06月　SEKAI NO OWARI <br>
+                                                2020年04月　乃木坂46 <br>
+                                                2020年03月　HiHi Jets <br>
+                                                2020年03月　AKB48 <br>
+                                                2020年02月　日向坂46 <br>
+                                                2020年02月　King Gnu <br>
+                                                2020年01月　Super fly <br>
+                                                2019年12月　[SUPER LIVE]　嵐 <br>
+                                                2019年12月　[SUPER LIVE]　三浦大知 <br>
+                                                2019年12月　[SUPER LIVE]　関ジャニ∞ <br>
+                                                2019年12月　[SUPER LIVE]　King ＆ Prince <br>
+                                                2019年12月　Little Gree Monster <br>
+                                                2019年11月　三浦祐太郎 <br>
+                                                2019年11月　Toshi <br>
+                                                2019年10月　パプリカ <br>
+                                                2019年09月　AKB 48 <br>
+                                                2019年08月　パプリカ <br>
+                                                2019年07月　嵐 <br>
+                                                2019年06月　King ＆ Prince <br>
+                                                2019年06月　パプリカ <br>
+                                                2019年05月　ブルゾンちえみ <br>
+                                                2019年05月　きゃりーぱみゅぱみゅ <br>
+                                                2019年05月　イル・ヴォーロ <br>
+                                                2019年04月　あいみょん <br>
+                                                2019年03月　倉木麻衣 <br>
+                                                2019年02月　秦基博 <br>
+                                                2018年12月　[SUPER LIVE]　スキマスイッチ <br>
+                                                2018年12月　[SUPER LIVE]　E-girls <br>
+                                                2018年12月　[SUPER LIVE]　AKB 48 <br>
+                                                2018年12月　[SUPER LIVE]　SEKAI NO OWARI <br>
+                                                2018年09月　[ULTRA FES]　劇団四季 <br>
+                                                2018年09月　[ULTRA FES]　TWICE <br>
+                                                2018年08月　星野源 <br>
+                                                2018年08月　三浦大知 <br>
+                                                2018年02月　AKB48 <br>
+                                                2018年02月　ゴールデンボンバー <br>
+                                                2017年12月　[SUPER LIVE]　AKB 48 <br>
+                                                2017年12月　[SUPER LIVE]　岡崎体育 <br>
+                                                2017年12月　[SUPER LIVE]　AI × 渡辺直美 <br>
+                                                2017年09月　[ULTRA FES]　V6 <br>
+                                                2017年09月　[ULTRA FES]　SexyZone <br>
+                                        </p>
+                                    </div>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj_Mst/MUSICSTATION_credit.jpg" alt="" />
+                                        </div>
+                                    </div>    
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://www.tv-asahi.co.jp/music/" target="_blank">Program HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 7-->
+        <div class="portfolio-modal modal fade dark-theme" id="portfolioModalKanjam" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Kanjam kanzen nen show</h2>
+                                <div class="modal-body">
+                                    <div class="image-block dark-theme">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1uNtzPW54rOYe3fXHAZQIMmyGI4M_7T6D/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1uNtzPW54rOYe3fXHAZQIMmyGI4M_7T6D&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                        <div class="container explain-block">
+                                        <h4 class="text-left">Opening Movie</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>イラスト</li>
+                                            <li><strong>制作期間 ： </strong>25 days</li>
+                                            <li><strong>作業時間 ： </strong>20 days</li>
+                                            <li><strong>作業人数 ： </strong>02 [Me : Illustrator]</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2018/08 〜 2019</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">合計100枚程のアニメーションイラストを手描きで作成しました。</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="container library-block">
+                                        <img class="img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1807_kanjam_board.png" alt="" />
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://www.tv-asahi.co.jp/kanjam/" target="_blank">Program HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 8-->
+        <div class="portfolio-modal modal fade" id="portfolioModalHimomen" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Himomen</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1tbUKVU_nllvyNUXSDC5ANR8jNXGWTOLn/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1tbUKVU_nllvyNUXSDC5ANR8jNXGWTOLn&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Opening Movie</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>イラスト・グラフィックデザイン・コンテ・モーション</li>
+                                            <li><strong>制作期間 ： </strong>20 days</li>
+                                            <li><strong>作業時間 ： </strong>09 days</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                            <li><strong>ＯＡ　　 ： </strong>2018 / 07 〜 2018 / 10</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                窪田正孝さん、川口春奈さん主演ドラマ。<br>
+                                                "<a href="https://gogen-yurai.jp/himo/#:~:text=%E3%81%B2%E3%82%82%E3%81%AE%E8%AA%9E%E6%BA%90%E3%83%BB%E7%94%B1%E6%9D%A5&text=%E3%83%92%E3%83%A2%E3%81%AE%E8%AA%9E%E6%BA%90%E8%AA%AC%E3%81%AB,%E3%81%9F%E3%81%A8%E3%81%99%E3%82%8B%E8%AA%AC%E3%82%82%E3%81%82%E3%82%8B%E3%80%82" target="_blank">ヒモ男</a>"の語源より、せかせかと働く女性が船の上にいる男性に紐で引っ張られると同時にお札がふきだしています。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="container library-block">
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1807_Himomen_2.jpg" alt="" />
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1807_Himomen_3.jpg" alt="" />    
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1807_Himomen_1.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="comment-block">
+                                        <p class="text-left">
+                                            入社２年目に初めてクレジット掲載していただきました。
+                                        </p>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://douga.tv-asahi.co.jp/program/22880-22879" target="_blank">Program HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 9-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalAirgirl" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" />
+                    </div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Air Girl</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2102_Airgirl.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Key Visual</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当　　 ： </strong>グラフィックデザイン</li>
+                                            <li><strong>制作期間 ： </strong>14 days</li>
+                                            <li><strong>作業時間 ： </strong>04 days</li>
+                                            <li><strong>作業人数 ： </strong>02 [Me : graphic designer]</li>
+                                            <li><strong>ＯＡ　　 ： </strong>2021 / 03 / 20</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                広瀬すずさん主演SPドラマ。紙面、映像など全媒体に展開される際の基になるキービジュアルを制作しました。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://www.tv-asahi.co.jp/airgirl/#/?category=drama" target="_blank">Program HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 10-->
+        <div class="portfolio-modal modal fade" id="portfolioModalSekaiTaisou" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">SEKAI TAISOU 2021</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-head/2109_SekaiTaisou_2021.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">All around Design</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当　　： </strong>キービジュアル映像・会場映像のデザイン/ディレクション/リソースマネジメント</li>
+                                            <li><strong>ＯＡ　　： </strong>2021 / 10 / 16 〜</li>
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">10年ぶりに日本で開催された世界体操の会場用映像の作成と<br>
+                                                OA用キービジュアルの展開をメインデザイナーとして担当しました。</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1VpFUtVLXzymsCAnPjMCbj-bECrBz2m4g/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1VpFUtVLXzymsCAnPjMCbj-bECrBz2m4g&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Key visual loop movie</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当　　： </strong>デザイン・モーション</li>
+                                            <li><strong>制作期間 ： </strong>5 days</li>
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">大会ロゴを3D化し、会場用のループ映像を制作しました。<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1cyXm5EgXadEiVGcsVEByDAY2ifxZcZGP/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1cyXm5EgXadEiVGcsVEByDAY2ifxZcZGP&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Count down movie</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当　　： </strong>デザイン・ディレクション</li>
+                                            <li><strong>制作期間 ： </strong>5 days</li>
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">会場用のカウントダウン映像のデザイン原案を制作しました。<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1qG9OfzyElX-OYdwn7kqChGu20HdKso33/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1qG9OfzyElX-OYdwn7kqChGu20HdKso33&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Swish movie</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当　　： </strong>デザイン・モーション</li>
+                                            <li><strong>制作期間 ： </strong>3 days</li>
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">OA用のスローワイプ素材を制作しました。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2110_SEKAITAISOU_Base_red.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2110_SEKAITAISOU_Base_wht.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">BG graphic</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当　　 ： </strong>デザイン</li>
+                                            <li><strong>作業人数 ： </strong>02 [Me : design only]</li>
+                                            <li><strong>制作期間 ： </strong>1 days</li>
+                                        </ul>
+                                        <div class="comment-block">
+                                            <p class="text-left">会場用の汎用背景グラフィックを制作しました。<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://www.2021agrg.jp/" target="_blank">Project HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 11-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalABEMAhills" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                    </div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">ABEMA hills</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2006_ABEMAhills_logo.png" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">LOGO</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>ロゴデザイン</li>
+                                            <li><strong>制作期間 ： </strong>15 days</li>
+                                            <li><strong>作業時間 ： </strong>04 days</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                            <li><strong>ＯＡ　　 ： </strong>2020 / 06 〜 now</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                ABEMA TV ニュース番組。<br>
+                                                "けやきヒルズ"からリニューアルの際にロゴデザインを始めとしたその他グラフィック一式デザイン。<br>
+                                                けやき坂スタジオで収録していることより、木をモチーフにABEMAブランディングのスラッシュを用いてロゴデザインしました。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1trMJbDSRz1CYEE-ZRPJOUyjzaCD2AJrP/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1trMJbDSRz1CYEE-ZRPJOUyjzaCD2AJrP&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">Opening Movie</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>グラフィックデザイン・コンテ・モーション</li>
+                                            <li><strong>制作期間 ： </strong>15 days</li>
+                                            <li><strong>作業時間 ： </strong>04 days</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                            <li><strong>ＯＡ　　 ： </strong>2020 / 06 〜</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                
+                                                お昼の12時よりOAされている当番組。<br>
+                                                ロゴで使用している丸とスラッシュをモチーフに時計を表現し、<br>
+                                                針が12時を指すとロゴが出現し、都市が現れるというOPを考案しました。
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="container library-block">
+                                        <img class="img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2006_ABEMAhills_conte.png" alt="" />
+                                    </div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://news-keyaki.abema.tv/" target="_blank">Program LINK</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 12-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalAzatokute" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" />
+                    </div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Azatokute naniga waruino ?</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1909_Azatokute_navy.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">LOGO</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>ロゴデザイン</li>
+                                            <li><strong>制作期間 ： </strong>08 days</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                            <li><strong>ＯＡ　　 ： </strong>2019 / 09 〜</li>
+                                            
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                ipadで書いた手書き文字を使用したロゴを考案・作成しました。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://www.tv-asahi.co.jp/azatokute/#/" target="_blank">Program HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 17-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalSeiya" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" />
+                    </div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Seiya no Apron</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2003_Seiyanoapron.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">LOGO</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>ロゴデザイン / イラスト</li>
+                                            <li><strong>制作期間 ： </strong>05 days</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                            <li><strong>ＯＡ　　 ： </strong>2020 / 03 〜</li>
+                                            
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">
+                                                特番用ロゴを作成しました。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <!-- <p class="text-center text-block">
+                                            【　<a href="https://www.tv-asahi.co.jp/azatokute/#/" target="_blank">Program HP</a>　】
+                                        </p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 13-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalOnegai" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Onegai Lanking</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2011_Onegai.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">CG set design</h4>
+                                        <ul class="text-left">
+                                            <li><strong>担当箇所 ： </strong>CGセットのデザイン・制作</li>
+                                            <li><strong>制作期間 ： </strong>20 days</li>
+                                            <li><strong>作業時間 ： </strong>08 days</li>
+                                            <li><strong>作業人数 ： </strong>01 </li>
+                                            <li><strong>ＯＡ　　 ： </strong>2020/11 〜</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">セットのデザインイメージを担当した際 練習のため３Dモデリングから制作。<br>
+                                            そのまま完成系として採用され、OAでご使用頂いていました。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="container library-block">
+                                        <div>
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2011_Onegai_chara.jpg" alt="" />
+                                        <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/2011_Onegai_bld.jpg" alt="" />
+                                        </div>    
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://www.tv-asahi.co.jp/onegai_chosenkyo/" target="_blank">Program HP</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 14-->
+        <div class="portfolio-modal modal fade bright-theme" id="portfolioModalCGDog" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">CGDog</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <iframe class="img-iframe" style="aspect-ratio: 16/9;" src="https://drive.google.com/file/d/1jgycaEBeoucnmsSsPL5WelcutAQHNAsq/preview" allow="autoplay"></iframe>
+                                        <!-- <video class="img-fluid" src="https://drive.google.com/uc?authuser=0&id=1jgycaEBeoucnmsSsPL5WelcutAQHNAsq&export=download" controls controlsList="nodownload noremoteplayback" alt="video" loop oncontextmenu="return false;"></video> -->
+                                        <!-- <span>※The video can only be viewed in Google Chrome environment.</span> -->
+                                    </div>
+                                    <div class="container explain-block">
+                                        <h4 class="text-left">3D Chara</h4>
+                                        <ul class="text-left">
+                                            <li><strong>作業時間 ： </strong>10 days</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">自主制作。動物キャラのデザインイメージ作成後、その中から１つモデリングしました。</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="container library-block">
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1903_CGDchara_1.jpg" alt="" />
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1903_CGDchara_2.jpg" alt="" />
+                                        </div>
+                                        <div>
+                                            <img class="open-image-src img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-content/1903_CGDchara_3.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 15-->
+        <div class="portfolio-modal modal fade" id="portfolioModalTaiyoutoBolero" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">Taiyou to Bolero</h2>
+                                <div class="modal-body">
+                                    <div class="image-block">
+                                        <img class="img-fluid d-block mx-auto" loading="eager" src="assets/img/pj-head/2106_TaiyoutoBolero.jpg" alt="" />
+                                    </div>
+                                    <div class="container explain-block">
+                                        <ul class="text-left">
+                                            <li><strong>映画公開 ： </strong>2022/06 〜</li>
+                                        </ul>
+                                        <br>
+                                        <div class="comment-block">
+                                            <p class="text-left">映画公開後に掲載予定です。</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-space-small"></div>
+                                    <div class="content-block container">
+                                        <hr width="0" size="10">
+                                        <p class="text-center text-block">
+                                            【　<a href="https://www.sun-bolero.jp/" target="_blank">Movie Information</a>　】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-modal-btm" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Extra 1.-->
+        <div class="portfolio-modal modal fade" id="portfolioModalSchollDays" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="text-uppercase xs-title">SCHOOL DAYS WORKS</h2>
+                                <div class="modal-body">
+                                    <div class="scroll-image-block scroll full">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_01.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_02.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_03.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_04.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_05.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_06.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_07.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_08.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_09.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_10.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_11.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_12.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_13.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_14.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_15.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_16.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_17.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_18.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_19.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_20.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_21.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_22.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_23.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_24.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_25.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_26.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_27.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_28.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_29.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_30.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_31.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_32.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_33.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_34.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_35.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_38.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_39.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_40.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_41.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_42.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_43.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_44.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_45.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_46.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_47.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_50.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_51.jpg" alt="" />
+                                    </div>
+                                    <div class="scroll-image-block scroll">
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_52.jpg" alt="" />
+                                        <img class="open-image-src" loading="eager" src="assets/img/pj_MAU/PF_53.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
