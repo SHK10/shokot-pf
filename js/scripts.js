@@ -148,6 +148,7 @@
             imagePath: "./assets/img/pj-head/2204_LINESkimani.jpg",
             category: [
                 categories.graphic,
+                categories.illust,
             ],
         },
         {
@@ -172,6 +173,7 @@
             imagePath: "./assets/img/pj-head/2310_BIZconcept.jpg",
             category: [
                 categories.graphic,
+                categories.op,
             ],
         },
         {
@@ -183,7 +185,7 @@
             description: "Applications start animation",
             imagePath: "./assets/img/pj-head/2406_LINEWALK.jpg",
             category: [
-                categories.graphic,
+                categories.threeD
             ],
         },
         {
@@ -195,7 +197,7 @@
             description: "Web animation",
             imagePath: "./assets/img/pj-head/2504_LYDesignHUB.jpg",
             category: [
-                categories.graphic,
+                // categories.graphic,
             ],
         },
         {
@@ -303,23 +305,24 @@
                 categories.graphic,
                 categories.logo,
                 categories.personal,
+                categories.illust,
             ],
         },
         {
-            order: 7.1,
+            order: 6.2,
             title: "Qicoka",
             modalRef: "#portfolioModalQicoka",
             year: "2022",
-            // month: "Feb",
+            month: "Feb",
             description: "Logo",
             imagePath: "./assets/img/pj-head/2202_Qicoka.jpg",
             category: [
-                categories.illust,
+                // categories.illust,
                 categories.logo,
             ],
         },
         {
-            order: 7.2,
+            order: 6.3,
             title: "Nico-T Project",
             modalRef: "#portfolioModalNICOT",
             year: "2021",
@@ -334,7 +337,7 @@
             ],
         },
         {
-            order: 7.3,
+            order: 7.1,
             title: "Agile project",
             modalRef: "#portfolioModalAgileProject",
             year: "2021",
@@ -347,7 +350,7 @@
             ],
         },
         {
-            order: 10.2,
+            order: 7.2,
             title: "NICE FLIGHT!",
             modalRef: "#portfolioModalNICEFLIGHT",
             year: "2023",
@@ -360,7 +363,7 @@
             ],
         },
         {
-            order: 10.3,
+            order: 7.3,
             title: "Taiyou to Bolero",
             modalRef: "#portfolioModalTaiyoutoBolero",
             year: "2021",
@@ -369,11 +372,12 @@
             imagePath: "./assets/img/pj-head/2107_TaiyoutoBolero.jpg",
             category: [
                 categories.logo,
-                categories.threeD
+                categories.threeD,
+                categories.graphic,
             ],
         },
         {
-            order: 11.1,
+            order: 10.1,
             title: "CGDog",
             modalRef: "#portfolioModalCGDog",
             year: "2019",
@@ -387,7 +391,7 @@
             ],
         },
         {
-            order: 11.2,
+            order: 10.2,
             title: "Onegai Ranking",
             modalRef: "#portfolioModalOnegai",
             year: "2020",
@@ -399,7 +403,7 @@
             ],
         },
         {
-            order: 11.3,
+            order: 10.3,
             title: "TV Logo", 
             modalRef: "#portfolioModalSeiya",
             year: "2020", 
@@ -408,6 +412,7 @@
             imagePath: "./assets/img/pj-head/2003_Seiyanoapron.jpg",
             category: [
                 categories.logo,
+                categories.illust,
             ], 
         },
         // {
@@ -423,7 +428,7 @@
         //     ],
         // },  
         {
-            order: 12,
+            order: 11.1,
             title: "Air Girl",
             modalRef: "#portfolioModalAirgirl",
             year: "2021",
@@ -435,7 +440,7 @@
             ],
         },        
         {
-            order: 13,
+            order: 11.2,
             title: "HIMOMEN",
             modalRef: "#portfolioModalHimomen",
             year: "2018",
@@ -449,7 +454,7 @@
             ],
         },
         {
-            order: 14.2,
+            order: 11.3,
             title: "Karisome Tengoku  -Mar-",
             modalRef: "#portfolioModalKarisomeMar",
             year: "2019",
@@ -464,7 +469,7 @@
         },
         
         {
-            order: 15.1,
+            order: 12.1,
             title: "KASOUKEN no ONNA -season21-", 
             modalRef: "#portfolioModalKasouken21",
             year: "2021", 
@@ -477,7 +482,7 @@
             ], 
         },
         {
-            order: 15.2,
+            order: 12.2,
             title: "KANJAM",
             modalRef: "#portfolioModalKanjam",
             year: "2018",
@@ -490,7 +495,7 @@
             ],
         },
         {
-            order: 15.3,
+            order: 12.3,
             title: "Yamagata Vindage",
             modalRef: "#portfolioModalVindage",
             year: "2022",
@@ -500,6 +505,7 @@
             category: [
                 categories.illust,
                 categories.logo,
+                categories.graphic,
                 categories.personal
             ],
         },

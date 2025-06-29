@@ -237,10 +237,10 @@ ul {
   background-color: black;
 }
 
-
 .portfolio-modal.dark-theme .modal-content .close-modal img {
   filter: invert();
 }
+
 
 .portfolio-modal.bright-theme {
   /* color: ; */
@@ -400,7 +400,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 abbr[title],
@@ -10651,7 +10651,7 @@ text-shadow: 1.5px 1.5px 4px #000000;
   /* background-color: white; */
   /* margin: 0px -2rem; */
   padding: 0.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .portfolio-modal .modal-content .image-block.dark-theme {
   background-color: black;
@@ -10666,7 +10666,7 @@ text-shadow: 1.5px 1.5px 4px #000000;
 .portfolio-modal .modal-content .scroll-image-block {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .portfolio-modal .modal-content .scroll-image-block img {
