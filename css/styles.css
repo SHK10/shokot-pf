@@ -870,6 +870,7 @@ pre code {
   padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 576px) {
