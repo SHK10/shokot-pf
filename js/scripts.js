@@ -64,7 +64,7 @@
     /**
      * dummy Login duckblue
      */
-    const dummy = "LY";
+    const dummy = "duckblue";
     const dummyDom = $("#dummy");
     const dummyInputDom = dummyDom.find("input")
     const pass = window.sessionStorage.getItem('dummy');    
@@ -140,6 +140,18 @@
         },
         {
             order: 2.1,
+            title: "LINE Seed Font Concept MV",
+            modalRef: "#portfolioModalSeed",
+            year: "2022",
+            month: "Oct",
+            description: "Concept Movie",
+            imagePath: "./assets/img/pj-head/2210_LINE_Seed.jpg",
+            category: [
+                categories.graphic,
+            ],
+        },
+        {
+            order: 2.2,
             title: "LINE Skimani",
             modalRef: "#portfolioModalLINESkimani",
             year: "2022",
@@ -149,18 +161,6 @@
             category: [
                 categories.graphic,
                 categories.illust,
-            ],
-        },
-        {
-            order: 2.2,
-            title: "LINE Seed Font Concept MV",
-            modalRef: "#portfolioModalSeed",
-            year: "2022",
-            month: "Oct",
-            description: "Concept Movie",
-            imagePath: "./assets/img/pj-head/2210_LINE_Seed.jpg",
-            category: [
-                categories.graphic,
             ],
         },
         {
@@ -202,14 +202,14 @@
         },
         {
             order: 3.3,
-            title: "LINE Investment Technology",
-            modalRef: "#portfolioModalLIT",
-            year: "2023",
-            month: "Apr",
+            title: "LINE CI Test",
+            modalRef: "#portfolioModalLINECI",
+            year: "2022",
+            month: "Nov",
             description: "Web animation",
-            imagePath: "./assets/img/pj-head/2304_LIT.jpg",
+            imagePath: "./assets/img/pj-head/2211_LINE_CI.jpg",
             category: [
-                categories.graphic,
+                // categories.graphic,
             ],
         },
         {
@@ -241,6 +241,18 @@
         },
         {
             order: 4.3,
+            title: "LINE Investment Technology",
+            modalRef: "#portfolioModalLIT",
+            year: "2023",
+            month: "Apr",
+            description: "Web animation",
+            imagePath: "./assets/img/pj-head/2304_LIT.jpg",
+            category: [
+                categories.graphic,
+            ],
+        },
+        {
+            order: 5.1,
             title: "SEKAI TAISOU -2021-",
             modalRef: "#portfolioModalSekaiTaisou",
             year: "2021",
@@ -251,18 +263,6 @@
                 categories.op,
                 categories.graphic,
                 categories.threeD
-            ],
-        },
-        {
-            order: 5.1,
-            title: "Azatokute nani ga Waruino?",
-            modalRef: "#portfolioModalAzatokute",
-            year: "2019",
-            month: "Jul",
-            description: "LOGO / extra graphics",
-            imagePath: "./assets/img/pj-head/1909_Azatokute.jpg",
-            category: [
-                categories.logo
             ],
         },
         {
@@ -317,23 +317,20 @@
             description: "Logo",
             imagePath: "./assets/img/pj-head/2202_Qicoka.jpg",
             category: [
-                // categories.illust,
+                categories.personal,
                 categories.logo,
             ],
         },
         {
             order: 6.3,
-            title: "Nico-T Project",
-            modalRef: "#portfolioModalNICOT",
-            year: "2021",
-            month: "Aug",
-            description: "T-shirt Design",
-            imagePath: "./assets/img/pj-head/2108_NicoT.jpg",
+            title: "Azatokute nani ga Waruino?",
+            modalRef: "#portfolioModalAzatokute",
+            year: "2019",
+            month: "Jul",
+            description: "LOGO / extra graphics",
+            imagePath: "./assets/img/pj-head/1909_Azatokute.jpg",
             category: [
-                categories.graphic,
-                categories.illust,
-                categories.logo,
-                categories.personal
+                categories.logo
             ],
         },
         {
@@ -351,9 +348,22 @@
         },
         {
             order: 7.2,
+            title: "KASOUKEN no ONNA -season21-", 
+            modalRef: "#portfolioModalKasouken21",
+            year: "2021", 
+            month: "Aug", 
+            description: "OP Movie", 
+            imagePath: "./assets/img/pj-head/2108_Kasouken21.jpg",
+            category: [
+                categories.graphic,
+                categories.op,
+            ], 
+        },
+        {
+            order: 7.3,
             title: "NICE FLIGHT!",
             modalRef: "#portfolioModalNICEFLIGHT",
-            year: "2023",
+            year: "2022",
             month: "May",
             description: "OP / Teaser movie",
             imagePath: "./assets/img/pj-head/2205_NICEFLIGHT.jpg",
@@ -363,7 +373,7 @@
             ],
         },
         {
-            order: 7.3,
+            order: 8.1,
             title: "Taiyou to Bolero",
             modalRef: "#portfolioModalTaiyoutoBolero",
             year: "2021",
@@ -377,7 +387,7 @@
             ],
         },
         {
-            order: 10.1,
+            order: 8.2,
             title: "CGDog",
             modalRef: "#portfolioModalCGDog",
             year: "2019",
@@ -391,7 +401,7 @@
             ],
         },
         {
-            order: 10.2,
+            order: 8.3,
             title: "Onegai Ranking",
             modalRef: "#portfolioModalOnegai",
             year: "2020",
@@ -403,7 +413,7 @@
             ],
         },
         {
-            order: 10.3,
+            order: 10.1,
             title: "TV Logo", 
             modalRef: "#portfolioModalSeiya",
             year: "2020", 
@@ -428,7 +438,7 @@
         //     ],
         // },  
         {
-            order: 11.1,
+            order: 10.2,
             title: "Air Girl",
             modalRef: "#portfolioModalAirgirl",
             year: "2021",
@@ -438,23 +448,37 @@
             category: [
                 categories.graphic,
             ],
-        },        
+        },
         {
-            order: 11.2,
-            title: "HIMOMEN",
-            modalRef: "#portfolioModalHimomen",
+            order: 10.3,
+            title: "KANJAM",
+            modalRef: "#portfolioModalKanjam",
             year: "2018",
             month: "Jul",
             description: "OP Movie",
-            imagePath: "./assets/img/pj-head/1807_Himomen.jpg",
+            imagePath: "./assets/img/pj-head/1807_Kanjam.jpg",
             category: [
                 categories.op,
-                categories.graphic,
                 categories.illust
             ],
         },
         {
-            order: 11.3,
+            order: 11.1,
+            title: "Nico-T Project",
+            modalRef: "#portfolioModalNICOT",
+            year: "2021",
+            month: "Aug",
+            description: "T-shirt Design",
+            imagePath: "./assets/img/pj-head/2108_NicoT.jpg",
+            category: [
+                categories.graphic,
+                categories.illust,
+                categories.logo,
+                categories.personal
+            ],
+        },
+        {
+            order: 11.2,
             title: "Karisome Tengoku  -Mar-",
             modalRef: "#portfolioModalKarisomeMar",
             year: "2019",
@@ -467,30 +491,17 @@
                 categories.illust
             ],
         },
-        
         {
-            order: 12.1,
-            title: "KASOUKEN no ONNA -season21-", 
-            modalRef: "#portfolioModalKasouken21",
-            year: "2021", 
-            month: "Aug", 
-            description: "OP Movie", 
-            imagePath: "./assets/img/pj-head/2108_Kasouken21.jpg",
-            category: [
-                categories.graphic,
-                categories.op,
-            ], 
-        },
-        {
-            order: 12.2,
-            title: "KANJAM",
-            modalRef: "#portfolioModalKanjam",
+            order: 11.3,
+            title: "HIMOMEN",
+            modalRef: "#portfolioModalHimomen",
             year: "2018",
             month: "Jul",
             description: "OP Movie",
-            imagePath: "./assets/img/pj-head/1807_Kanjam.jpg",
+            imagePath: "./assets/img/pj-head/1807_Himomen.jpg",
             category: [
                 categories.op,
+                categories.graphic,
                 categories.illust
             ],
         },
