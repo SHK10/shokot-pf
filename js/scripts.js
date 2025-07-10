@@ -140,18 +140,6 @@
         },
         {
             order: 2.1,
-            title: "LINE Seed Font Concept MV",
-            modalRef: "#portfolioModalSeed",
-            year: "2022",
-            month: "Oct",
-            description: "Concept Movie",
-            imagePath: "./assets/img/pj-head/2210_LINE_Seed.jpg",
-            category: [
-                categories.graphic,
-            ],
-        },
-        {
-            order: 2.2,
             title: "LY Design HUB",
             modalRef: "#portfolioModalLYDesign",
             year: "2025",
@@ -160,6 +148,18 @@
             imagePath: "./assets/img/pj-head/2504_LYDesignHUB.jpg",
             category: [
                 // categories.graphic,
+            ],
+        },
+        {
+            order: 2.2,
+            title: "LINE Seed Font Concept MV",
+            modalRef: "#portfolioModalSeed",
+            year: "2022",
+            month: "Oct",
+            description: "Concept Movie",
+            imagePath: "./assets/img/pj-head/2210_LINE_Seed.jpg",
+            category: [
+                categories.graphic,
             ],
         },
         {
@@ -175,8 +175,6 @@
                 categories.op,
             ],
         },
-
-
         {
             order: 4.1,
             title: "MUSIC STATION",
@@ -260,6 +258,18 @@
         },
         {
             order: 6.1,
+            title: "Air Girl",
+            modalRef: "#portfolioModalAirgirl",
+            year: "2021",
+            month: "Feb",
+            description: "Key visual ",
+            imagePath: "./assets/img/pj-head/2102_Airgirl.jpg",
+            category: [
+                categories.graphic,
+            ],
+        },
+        {
+            order: 6.2,
             title: "WaterO",
             modalRef: "#portfolioModalWatero",
             year: "2020",
@@ -274,28 +284,16 @@
             ],
         },
         {
-            order: 6.2,
-            title: "Qicoka",
-            modalRef: "#portfolioModalQicoka",
-            year: "2022",
-            month: "Feb",
-            description: "Logo",
-            imagePath: "./assets/img/pj-head/2202_Qicoka.jpg",
-            category: [
-                categories.personal,
-                categories.logo,
-            ],
-        },
-        {
             order: 6.3,
-            title: "Air Girl",
-            modalRef: "#portfolioModalAirgirl",
-            year: "2021",
-            month: "Feb",
-            description: "Key visual ",
-            imagePath: "./assets/img/pj-head/2102_Airgirl.jpg",
+            title: "NICE FLIGHT!",
+            modalRef: "#portfolioModalNICEFLIGHT",
+            year: "2022",
+            month: "May",
+            description: "OP / Teaser movie",
+            imagePath: "./assets/img/pj-head/2205_NICEFLIGHT.jpg",
             category: [
                 categories.graphic,
+                categories.op
             ],
         },
         {
@@ -325,16 +323,16 @@
         },
         {
             order: 7.3,
-            title: "NICE FLIGHT!",
-            modalRef: "#portfolioModalNICEFLIGHT",
-            year: "2022",
-            month: "May",
-            description: "OP / Teaser movie",
-            imagePath: "./assets/img/pj-head/2205_NICEFLIGHT.jpg",
+            title: "TV show logos", 
+            modalRef: "#portfolioModalLogos",
+            year: " ", 
+            month: " ", 
+            description: "Logo / Illust", 
+            imagePath: "./assets/img/pj-head/2002_IioKazukiTV_1.jpg",
             category: [
-                categories.graphic,
-                categories.op
-            ],
+                categories.logo,
+                categories.illust,
+            ], 
         },
         {
             order: 8.1,
@@ -377,19 +375,6 @@
                 categories.graphic,
             ],
         },
-        {
-            order: 10.1,
-            title: "TV Logo", 
-            modalRef: "#portfolioModalSeiya",
-            year: "2020", 
-            month: "March", 
-            description: "Logo Design", 
-            imagePath: "./assets/img/pj-head/2003_Seiyanoapron.jpg",
-            category: [
-                categories.logo,
-                categories.illust,
-            ], 
-        },
         // {
         //     order: 9,
         //     title: "SodaTV",
@@ -403,7 +388,7 @@
         //     ],
         // },
         {
-            order: 10.3,
+            order: 10.1,
             title: "KANJAM",
             modalRef: "#portfolioModalKanjam",
             year: "2018",
@@ -416,22 +401,34 @@
             ],
         },
         {
-            order: 11.1,
-            title: "Nico-T Project",
-            modalRef: "#portfolioModalNICOT",
-            year: "2021",
-            month: "Aug",
-            description: "T-shirt Design",
-            imagePath: "./assets/img/pj-head/2108_NicoT.jpg",
+            order: 10.2,
+            title: "Qicoka",
+            modalRef: "#portfolioModalQicoka",
+            year: "2022",
+            month: "Feb",
+            description: "Logo",
+            imagePath: "./assets/img/pj-head/2202_Qicoka.jpg",
             category: [
-                categories.graphic,
-                categories.illust,
+                categories.personal,
                 categories.logo,
-                categories.personal
             ],
         },
         {
-            order: 11.2,
+            order: 10.3,
+            title: "Oniwa Tomarasete", 
+            modalRef: "#portfolioModalOniwa",
+            year: "2018", 
+            month: "Nov", 
+            description: "Logo / Graphic", 
+            imagePath: "./assets/img/pj-head/1811_Oniwatomarsete.jpg",
+            category: [
+                categories.logo,
+                categories.illust,
+                categories.graphic,
+            ], 
+        },
+        {
+            order: 11.1,
             title: "Karisome Tengoku  -Mar-",
             modalRef: "#portfolioModalKarisomeMar",
             year: "2019",
@@ -445,7 +442,7 @@
             ],
         },
         {
-            order: 11.3,
+            order: 11.2,
             title: "HIMOMEN",
             modalRef: "#portfolioModalHimomen",
             year: "2018",
@@ -459,7 +456,7 @@
             ],
         },
         {
-            order: 12.3,
+            order: 11.3,
             title: "Yamagata Vindage",
             modalRef: "#portfolioModalVindage",
             year: "2022",
@@ -470,6 +467,21 @@
                 categories.illust,
                 categories.logo,
                 categories.graphic,
+                categories.personal
+            ],
+        },
+        {
+            order: 12.1,
+            title: "Nico-T Project",
+            modalRef: "#portfolioModalNICOT",
+            year: "2021",
+            month: "Aug",
+            description: "T-shirt Design",
+            imagePath: "./assets/img/pj-head/2108_NicoT.jpg",
+            category: [
+                categories.graphic,
+                categories.illust,
+                categories.logo,
                 categories.personal
             ],
         },
