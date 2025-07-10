@@ -152,15 +152,14 @@
         },
         {
             order: 2.2,
-            title: "LINE Skimani",
-            modalRef: "#portfolioModalLINESkimani",
-            year: "2022",
+            title: "LY Design HUB",
+            modalRef: "#portfolioModalLYDesign",
+            year: "2025",
             month: "Apr",
-            description: "Graphics",
-            imagePath: "./assets/img/pj-head/2204_LINESkimani.jpg",
+            description: "Web animation",
+            imagePath: "./assets/img/pj-head/2504_LYDesignHUB.jpg",
             category: [
-                categories.graphic,
-                categories.illust,
+                // categories.graphic,
             ],
         },
         {
@@ -176,42 +175,8 @@
                 categories.op,
             ],
         },
-        {
-            order: 3.1,
-            title: "LINE WALK",
-            modalRef: "#portfolioModalLINEWALK",
-            year: "2024",
-            month: "Jun",
-            description: "Applications start animation",
-            imagePath: "./assets/img/pj-head/2406_LINEWALK.jpg",
-            category: [
-                categories.threeD
-            ],
-        },
-        {
-            order: 3.2,
-            title: "LY Design HUB",
-            modalRef: "#portfolioModalLYDesign",
-            year: "2025",
-            month: "Apr",
-            description: "Web animation",
-            imagePath: "./assets/img/pj-head/2504_LYDesignHUB.jpg",
-            category: [
-                // categories.graphic,
-            ],
-        },
-        {
-            order: 3.3,
-            title: "LINE CI Test",
-            modalRef: "#portfolioModalLINECI",
-            year: "2022",
-            month: "Nov",
-            description: "Web animation",
-            imagePath: "./assets/img/pj-head/2211_LINE_CI.jpg",
-            category: [
-                // categories.graphic,
-            ],
-        },
+
+
         {
             order: 4.1,
             title: "MUSIC STATION",
@@ -241,14 +206,14 @@
         },
         {
             order: 4.3,
-            title: "LINE Investment Technology",
-            modalRef: "#portfolioModalLIT",
-            year: "2023",
-            month: "Apr",
-            description: "Web animation",
-            imagePath: "./assets/img/pj-head/2304_LIT.jpg",
+            title: "Azatokute nani ga Waruino?",
+            modalRef: "#portfolioModalAzatokute",
+            year: "2019",
+            month: "Jul",
+            description: "LOGO / extra graphics",
+            imagePath: "./assets/img/pj-head/1909_Azatokute.jpg",
             category: [
-                categories.graphic,
+                categories.logo
             ],
         },
         {
@@ -323,27 +288,26 @@
         },
         {
             order: 6.3,
-            title: "Azatokute nani ga Waruino?",
-            modalRef: "#portfolioModalAzatokute",
-            year: "2019",
-            month: "Jul",
-            description: "LOGO / extra graphics",
-            imagePath: "./assets/img/pj-head/1909_Azatokute.jpg",
+            title: "Air Girl",
+            modalRef: "#portfolioModalAirgirl",
+            year: "2021",
+            month: "Feb",
+            description: "Key visual ",
+            imagePath: "./assets/img/pj-head/2102_Airgirl.jpg",
             category: [
-                categories.logo
+                categories.graphic,
             ],
         },
         {
             order: 7.1,
-            title: "Agile project",
-            modalRef: "#portfolioModalAgileProject",
-            year: "2021",
-            month: "Dec",
-            description: "Logo design",
-            imagePath: "./assets/img/pj-head/2112_AgileProject.jpg",
+            title: "Onegai Ranking",
+            modalRef: "#portfolioModalOnegai",
+            year: "2020",
+            month: "Nov",
+            description: "CG set design",
+            imagePath: "./assets/img/pj-head/2011_Onegai_set_logo.jpg",
             category: [
-                categories.logo,
-                categories.personal
+                categories.threeD
             ],
         },
         {
@@ -374,16 +338,15 @@
         },
         {
             order: 8.1,
-            title: "Taiyou to Bolero",
-            modalRef: "#portfolioModalTaiyoutoBolero",
+            title: "Agile project",
+            modalRef: "#portfolioModalAgileProject",
             year: "2021",
-            month: "Jun",
-            description: "LOGO / VFX / extra graffics",
-            imagePath: "./assets/img/pj-head/2107_TaiyoutoBolero.jpg",
+            month: "Dec",
+            description: "Logo design",
+            imagePath: "./assets/img/pj-head/2112_AgileProject.jpg",
             category: [
                 categories.logo,
-                categories.threeD,
-                categories.graphic,
+                categories.personal
             ],
         },
         {
@@ -402,14 +365,16 @@
         },
         {
             order: 8.3,
-            title: "Onegai Ranking",
-            modalRef: "#portfolioModalOnegai",
-            year: "2020",
-            month: "Nov",
-            description: "CG set design",
-            imagePath: "./assets/img/pj-head/2011_Onegai_set_logo.jpg",
+            title: "Taiyou to Bolero",
+            modalRef: "#portfolioModalTaiyoutoBolero",
+            year: "2021",
+            month: "Jun",
+            description: "LOGO / VFX / extra graffics",
+            imagePath: "./assets/img/pj-head/2107_TaiyoutoBolero.jpg",
             category: [
-                categories.threeD
+                categories.logo,
+                categories.threeD,
+                categories.graphic,
             ],
         },
         {
@@ -436,19 +401,7 @@
         //     category: [
         //         categories.threeD
         //     ],
-        // },  
-        {
-            order: 10.2,
-            title: "Air Girl",
-            modalRef: "#portfolioModalAirgirl",
-            year: "2021",
-            month: "Feb",
-            description: "Key visual ",
-            imagePath: "./assets/img/pj-head/2102_Airgirl.jpg",
-            category: [
-                categories.graphic,
-            ],
-        },
+        // },
         {
             order: 10.3,
             title: "KANJAM",
@@ -518,6 +471,55 @@
                 categories.logo,
                 categories.graphic,
                 categories.personal
+            ],
+        },
+        {
+            order: 15.1,
+            title: "LINE WALK",
+            modalRef: "#portfolioModalLINEWALK",
+            year: "2024",
+            month: "Jun",
+            description: "Applications start animation",
+            imagePath: "./assets/img/pj-head/2406_LINEWALK.jpg",
+            category: [
+                categories.threeD
+            ],
+        },
+        {
+            order: 15.2,
+            title: "LINE Skimani",
+            modalRef: "#portfolioModalLINESkimani",
+            year: "2022",
+            month: "Apr",
+            description: "Graphics",
+            imagePath: "./assets/img/pj-head/2204_LINESkimani.jpg",
+            category: [
+                categories.graphic,
+                categories.illust,
+            ],
+        },
+        {
+            order: 15.3,
+            title: "LINE CI Test",
+            modalRef: "#portfolioModalLINECI",
+            year: "2022",
+            month: "Nov",
+            description: "Web animation",
+            imagePath: "./assets/img/pj-head/2211_LINE_CI.jpg",
+            category: [
+                // categories.graphic,
+            ],
+        },
+        {
+            order: 16.3,
+            title: "LINE Investment Technology",
+            modalRef: "#portfolioModalLIT",
+            year: "2023",
+            month: "Apr",
+            description: "Web animation",
+            imagePath: "./assets/img/pj-head/2304_LIT.jpg",
+            category: [
+                categories.graphic,
             ],
         },
         // {
