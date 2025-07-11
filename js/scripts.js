@@ -119,7 +119,7 @@
             modalRef: "#portfolioModalYmap",
             year: "2024",
             month: "Apr",
-            description: "3D modeling",
+            description: "3D Modeling",
             imagePath: "./assets/img/pj-head/2404_Ymap.jpg",
             category: [
                 categories.threeD
@@ -131,7 +131,7 @@
             modalRef: "#portfolioModalHelloFriends",
             year: "2025",
             month: "May",
-            description: "OOH Video, 3D icon",
+            description: "OOH Video, 3D Icon",
             imagePath: "./assets/img/pj-head/2505_HelloFriends.jpg",
             category: [
                 categories.graphic,
@@ -144,7 +144,7 @@
             modalRef: "#portfolioModalLYDesign",
             year: "2025",
             month: "Apr",
-            description: "Web animation",
+            description: "Web Animation",
             imagePath: "./assets/img/pj-head/2504_LYDesignHUB.jpg",
             category: [
                 // categories.graphic,
@@ -156,7 +156,7 @@
             modalRef: "#portfolioModalSeed",
             year: "2022",
             month: "Oct",
-            description: "Concept Movie",
+            description: "Concept Video",
             imagePath: "./assets/img/pj-head/2210_LINE_Seed.jpg",
             category: [
                 categories.graphic,
@@ -164,11 +164,11 @@
         },
         {
             order: 2.3,
-            title: "LY Biz Concept",
-            modalRef: "#portfolioModalLYBizConcept",
+            title: "LY Biz Conference",
+            modalRef: "#portfolioModalLYBiz",
             year: "2023",
             month: "Sep",
-            description: "Concept Movie",
+            description: "Concept Video",
             imagePath: "./assets/img/pj-head/2310_BIZconcept.jpg",
             category: [
                 categories.graphic,
@@ -181,7 +181,7 @@
             modalRef: "#portfolioModalMUSICSTATION",
             year: "Until",
             month: "now",
-            description: "Artist back movie",
+            description: "Artist Back Video",
             imagePath: "./assets/img/pj-head/MUSICSTATION.jpg",
             category: [
                 categories.graphic,
@@ -195,7 +195,7 @@
             modalRef: "#portfolioModalUberEats",
             year: "2022",
             month: "Apr",
-            description: "PR Movie",
+            description: "Promo Video",
             imagePath: "./assets/img/pj-head/2204_UberEats.jpg",
             category: [
                 categories.graphic,
@@ -220,7 +220,7 @@
             modalRef: "#portfolioModalSekaiTaisou",
             year: "2021",
             month: "Sep",
-            description: "OP movie / Key visual / all around the venue design",
+            description: "Opening Video / All around the Venue Video",
             imagePath: "./assets/img/pj-head/2109_SekaiTaisou_2021.jpg",
             category: [
                 categories.op,
@@ -234,7 +234,7 @@
             modalRef: "#portfolioModalABEMAhills",
             year: "2020",
             month: "Jul",
-            description: "LOGO / OP movie / extra graphics",
+            description: "Logo / Opening Video / Extra Graphics",
             imagePath: "./assets/img/pj-head/2006_ABEMAhills.jpg",
             category: [
                 categories.op,
@@ -249,7 +249,7 @@
             modalRef: "#portfolioModalKarisomeOct",
             year: "2019",
             month: "Oct",
-            description: "OP Movie / extra graphics",
+            description: "Opening Video / Extra Graphics",
             imagePath: "./assets/img/pj-head/1910_KarisomeOct.jpg",
             category: [
                 categories.graphic,
@@ -274,7 +274,7 @@
             modalRef: "#portfolioModalWatero",
             year: "2020",
             month: "Aug",
-            description: "Logo / extra graphics",
+            description: "Logo / Extra Graphics",
             imagePath: "./assets/img/pj-head/2008_WaterO.jpg",
             category: [
                 categories.graphic,
@@ -289,7 +289,7 @@
             modalRef: "#portfolioModalNICEFLIGHT",
             year: "2022",
             month: "May",
-            description: "OP / Teaser movie",
+            description: "Opening / Teaser Video",
             imagePath: "./assets/img/pj-head/2205_NICEFLIGHT.jpg",
             category: [
                 categories.graphic,
@@ -302,7 +302,7 @@
             modalRef: "#portfolioModalOnegai",
             year: "2020",
             month: "Nov",
-            description: "CG set design",
+            description: "CG Set",
             imagePath: "./assets/img/pj-head/2011_Onegai_set_logo.jpg",
             category: [
                 categories.threeD
@@ -314,7 +314,7 @@
             modalRef: "#portfolioModalKasouken21",
             year: "2021", 
             month: "Aug", 
-            description: "OP Movie", 
+            description: "Opening Video", 
             imagePath: "./assets/img/pj-head/2108_Kasouken21.jpg",
             category: [
                 categories.graphic,
@@ -327,7 +327,7 @@
             modalRef: "#portfolioModalLogos",
             year: " ", 
             month: " ", 
-            description: "Logo / Illust", 
+            description: "Logo / Illustration", 
             imagePath: "./assets/img/pj-head/2002_IioKazukiTV_1.jpg",
             category: [
                 categories.logo,
@@ -340,7 +340,7 @@
             modalRef: "#portfolioModalAgileProject",
             year: "2021",
             month: "Dec",
-            description: "Logo design",
+            description: "Logo",
             imagePath: "./assets/img/pj-head/2112_AgileProject.jpg",
             category: [
                 categories.logo,
@@ -353,7 +353,7 @@
             modalRef: "#portfolioModalCGDog",
             year: "2019",
             month: "Mar",
-            description: "Animal character design",
+            description: "Character Design",
             imagePath: "./assets/img/pj-head/1903_CGDog.jpg",
             category: [
                 categories.illust,
@@ -367,7 +367,7 @@
             modalRef: "#portfolioModalTaiyoutoBolero",
             year: "2021",
             month: "Jun",
-            description: "LOGO / VFX / extra graffics",
+            description: "Logo / VFX / Extra Graphics",
             imagePath: "./assets/img/pj-head/2107_TaiyoutoBolero.jpg",
             category: [
                 categories.logo,
@@ -393,7 +393,7 @@
             modalRef: "#portfolioModalKanjam",
             year: "2018",
             month: "Jul",
-            description: "OP Movie",
+            description: "Opening Video",
             imagePath: "./assets/img/pj-head/1807_Kanjam.jpg",
             category: [
                 categories.op,
@@ -419,11 +419,12 @@
             modalRef: "#portfolioModalOniwa",
             year: "2018", 
             month: "Nov", 
-            description: "Logo / Graphic", 
+            description: "Logo / Opening Video / Extra Graphics", 
             imagePath: "./assets/img/pj-head/1811_Oniwatomarsete.jpg",
             category: [
                 categories.logo,
                 categories.illust,
+                categories.op,
                 categories.graphic,
             ], 
         },
@@ -433,7 +434,7 @@
             modalRef: "#portfolioModalKarisomeMar",
             year: "2019",
             month: "Mar",
-            description: "OP Movie",
+            description: "Opening Video",
             imagePath: "./assets/img/pj-head/1903_KarisomeMar.jpg",
             category: [
                 categories.graphic,
@@ -447,7 +448,7 @@
             modalRef: "#portfolioModalHimomen",
             year: "2018",
             month: "Jul",
-            description: "OP Movie",
+            description: "Opening Video",
             imagePath: "./assets/img/pj-head/1807_Himomen.jpg",
             category: [
                 categories.op,
@@ -461,7 +462,7 @@
             modalRef: "#portfolioModalVindage",
             year: "2022",
             month: "Mar",
-            description: "Logo / Graphic design",
+            description: "Logo / Graphics ",
             imagePath: "./assets/img/pj-head/2503_Vindage_KV_22.jpg",
             category: [
                 categories.illust,
@@ -476,7 +477,7 @@
             modalRef: "#portfolioModalNICOT",
             year: "2021",
             month: "Aug",
-            description: "T-shirt Design",
+            description: "Logo / Goods",
             imagePath: "./assets/img/pj-head/2108_NicoT.jpg",
             category: [
                 categories.graphic,
@@ -491,7 +492,7 @@
             modalRef: "#portfolioModalLINEWALK",
             year: "2024",
             month: "Jun",
-            description: "Applications start animation",
+            description: "Applications Start Animation",
             imagePath: "./assets/img/pj-head/2406_LINEWALK.jpg",
             category: [
                 categories.threeD
@@ -516,7 +517,7 @@
             modalRef: "#portfolioModalLINECI",
             year: "2022",
             month: "Nov",
-            description: "Web animation",
+            description: "Logo Animation",
             imagePath: "./assets/img/pj-head/2211_LINE_CI.jpg",
             category: [
                 // categories.graphic,
@@ -528,7 +529,7 @@
             modalRef: "#portfolioModalLIT",
             year: "2023",
             month: "Apr",
-            description: "Web animation",
+            description: "Web Parts Animation",
             imagePath: "./assets/img/pj-head/2304_LIT.jpg",
             category: [
                 categories.graphic,
