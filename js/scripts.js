@@ -102,7 +102,7 @@
     const configs = [
         {
             order: 1.1,
-            title: "LINE Pay Promo Video",
+            title: "LINE Pay",
             modalRef: "#portfolioModalLINEPay",
             year: "2024",
             month: "Feb",
@@ -115,19 +115,19 @@
         },
         {
             order: 1.2,
-            title: "Yahoo! Map Landmark PJ",
+            title: "Yahoo! Map",
             modalRef: "#portfolioModalYmap",
             year: "2024",
             month: "Apr",
-            description: "3D Modeling",
+            description: "3D Landmark PJ",
             imagePath: "./assets/img/pj-head/2404_Ymap.jpg",
             category: [
-                categories.threeD
+                categories.threeD,
             ],
         },
         {
             order: 1.3,
-            title: "Hello Friends!",
+            title: "Hello Friends!2025",
             modalRef: "#portfolioModalHelloFriends",
             year: "2025",
             month: "May",
@@ -135,7 +135,7 @@
             imagePath: "./assets/img/pj-head/2505_HelloFriends.jpg",
             category: [
                 categories.graphic,
-                categories.threeD                
+                categories.threeD,                
             ],
         },
         {
@@ -144,15 +144,15 @@
             modalRef: "#portfolioModalLYDesign",
             year: "2025",
             month: "Apr",
-            description: "Web Animation",
+            description: "Web Parts Animation",
             imagePath: "./assets/img/pj-head/2504_LYDesignHUB.jpg",
             category: [
-                // categories.graphic,
+                categories.graphic,
             ],
         },
         {
             order: 2.2,
-            title: "LINE Seed Font Concept MV",
+            title: "LINE Seed Font",
             modalRef: "#portfolioModalSeed",
             year: "2022",
             month: "Oct",
@@ -168,7 +168,7 @@
             modalRef: "#portfolioModalLYBiz",
             year: "2023",
             month: "Sep",
-            description: "Concept Video",
+            description: "Opening Video / Concept Video",
             imagePath: "./assets/img/pj-head/2310_BIZconcept.jpg",
             category: [
                 categories.graphic,
@@ -186,7 +186,8 @@
             category: [
                 categories.graphic,
                 categories.illust,
-                categories.threeD
+                categories.character,
+                categories.threeD,
             ],
         },
         {
@@ -199,7 +200,8 @@
             imagePath: "./assets/img/pj-head/2204_UberEats.jpg",
             category: [
                 categories.graphic,
-                categories.threeD
+                categories.threeD,
+                categories.character,
             ],
         },
         {
@@ -208,10 +210,11 @@
             modalRef: "#portfolioModalAzatokute",
             year: "2019",
             month: "Jul",
-            description: "LOGO / extra graphics",
+            description: "Logo / Extra graphics",
             imagePath: "./assets/img/pj-head/1909_Azatokute.jpg",
             category: [
-                categories.logo
+                categories.logo,
+                categories.graphic,
             ],
         },
         {
@@ -220,12 +223,11 @@
             modalRef: "#portfolioModalSekaiTaisou",
             year: "2021",
             month: "Sep",
-            description: "Opening Video / All around the Venue Video",
+            description: "Key Visual Video / All around the Venue Video",
             imagePath: "./assets/img/pj-head/2109_SekaiTaisou_2021.jpg",
             category: [
-                categories.op,
                 categories.graphic,
-                categories.threeD
+                categories.threeD,
             ],
         },
         {
@@ -240,7 +242,7 @@
                 categories.op,
                 categories.graphic,
                 categories.logo,
-                categories.illust
+                categories.illust,
             ],
         },
         {
@@ -293,7 +295,7 @@
             imagePath: "./assets/img/pj-head/2205_NICEFLIGHT.jpg",
             category: [
                 categories.graphic,
-                categories.op
+                categories.op,
             ],
         },
         {
@@ -302,10 +304,10 @@
             modalRef: "#portfolioModalOnegai",
             year: "2020",
             month: "Nov",
-            description: "CG Set",
+            description: "3D CG Set",
             imagePath: "./assets/img/pj-head/2011_Onegai_set_logo.jpg",
             category: [
-                categories.threeD
+                categories.threeD,
             ],
         },
         {
@@ -323,7 +325,7 @@
         },
         {
             order: 7.3,
-            title: "TV show logos", 
+            title: "TV Show Logos", 
             modalRef: "#portfolioModalLogos",
             year: " ", 
             month: " ", 
@@ -332,6 +334,7 @@
             category: [
                 categories.logo,
                 categories.illust,
+                categories.character,
             ], 
         },
         {
@@ -353,12 +356,13 @@
             modalRef: "#portfolioModalCGDog",
             year: "2019",
             month: "Mar",
-            description: "Character Design",
+            description: "3D Character Design",
             imagePath: "./assets/img/pj-head/1903_CGDog.jpg",
             category: [
                 categories.illust,
                 categories.threeD,
-                categories.personal
+                categories.personal,
+                categories.character,
             ],
         },
         {
@@ -384,7 +388,7 @@
         //     description: "Set design,BG design",
         //     imagePath: "./assets/img/pj-head/2006_ABEMAhills.jpg",
         //     category: [
-        //         categories.threeD
+        //         categories.threeD,
         //     ],
         // },
         {
@@ -397,7 +401,7 @@
             imagePath: "./assets/img/pj-head/1807_Kanjam.jpg",
             category: [
                 categories.op,
-                categories.illust
+                categories.illust,
             ],
         },
         {
@@ -439,7 +443,7 @@
             category: [
                 categories.graphic,
                 categories.op,
-                categories.illust
+                categories.illust,
             ],
         },
         {
@@ -453,7 +457,8 @@
             category: [
                 categories.op,
                 categories.graphic,
-                categories.illust
+                categories.illust,
+                categories.character,
             ],
         },
         {
@@ -468,7 +473,8 @@
                 categories.illust,
                 categories.logo,
                 categories.graphic,
-                categories.personal
+                categories.personal,
+                categories.character,
             ],
         },
         {
@@ -483,7 +489,8 @@
                 categories.graphic,
                 categories.illust,
                 categories.logo,
-                categories.personal
+                categories.personal,
+                categories.character,
             ],
         },
         {
@@ -495,7 +502,7 @@
             description: "Applications Start Animation",
             imagePath: "./assets/img/pj-head/2406_LINEWALK.jpg",
             category: [
-                categories.threeD
+                categories.threeD,
             ],
         },
         {
@@ -543,7 +550,7 @@
         //     description: "LOGO / OP movie / extra graffics ",
         //     imagePath: "./assets/img/pj-head/1707_AriyoshiTankentai.jpg",
         //     category: [
-        //         categories.logo.op
+        //         categories.logo.op,
         //     ],
         // },
 
