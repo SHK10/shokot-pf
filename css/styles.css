@@ -81,7 +81,7 @@ ul {
   width: 100vw;
   height: 100vh;
   z-index: 9999;
-  background: var(--keyclr);
+  background: var(--keylight);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +105,7 @@ ul {
   flex-wrap: wrap;
   max-width: 60%;
   margin: auto;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   align-items: center;
   justify-content: space-between;
 }
@@ -313,13 +313,13 @@ ul {
  */
 :root {
   /* custom */
-  --keylight: #8cb2bd;
-  --keyclr: #007394;
-  --keydark: #004964;
+  --keylight: #c9c9c9;
+  --keyclr: #585858;
+  --keydark: #3d2f2e;
   --sublight: #e3e3e3;
   --subclr: #7c7c7c;
   --subdark: #3b3b3b;
-  --bgdark: #061420;
+  --bgdark: #2b2d2e;
   --bgmask: rgba(6, 20, 32, 0.4);
   --keyfont: "Montserrat", "Helvetica Neue", Arial;
   /* ------- */
@@ -2968,8 +2968,7 @@ fieldset:disabled a.btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
+  background-color: #D5E65E;
 }
 .btn-dark:hover {
   color: #fff;
@@ -10309,7 +10308,7 @@ p {
   padding: 4rem 0;
 }
 .page-section h2.section-heading {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -10318,7 +10317,7 @@ p {
   font-weight: 400;
   font-style: italic;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -10435,7 +10434,7 @@ img::-moz-selection {
   }
 }
 div.masthead {
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
   text-align: center;
   color: #fff;
   /* background-image: url("../assets/img/myroom.jpg");
@@ -10576,11 +10575,11 @@ text-shadow: 1.5px 1.5px 4px #000000;
 #portfolio .portfolio-item .portfolio-caption {
   padding: 0rem;
   text-align: left;
-  background-color: #000;
-  color: white;
+  background-color: #2b2d2e;
+  color: #fff;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.0rem;
+  font-size: 0.8rem;
   padding: 7px 7px;
   font-family: var(--keyfont);
   font-weight: 400;
@@ -10782,7 +10781,13 @@ text-shadow: 1.5px 1.5px 4px #000000;
   background-color: var(--keyclr);
 }
 .timeline > li .timeline-image h4 {
-  font-size: 10px;
+  font-size: 12px;
+  font-family: 
+  "Georgia", 
+  "Times New Roman", 
+  "Palatino", 
+  "Noto Serif", 
+  serif;
   line-height: 14px;
   margin-top: 12px;
 }
@@ -10808,6 +10813,12 @@ text-shadow: 1.5px 1.5px 4px #000000;
 }
 .timeline .timeline-heading h4 {
   margin-top: 0;
+  font-family: 
+  "Georgia", 
+  "Times New Roman", 
+  "Palatino", 
+  "Noto Serif", 
+  serif;
   color: inherit;
 }
 .timeline .timeline-heading h4.subheading {
@@ -10959,6 +10970,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .footer {
   text-align: center;
+
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

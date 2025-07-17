@@ -119,7 +119,7 @@
             modalRef: "#portfolioModalYmap",
             year: "2024",
             month: "Apr",
-            description: "3D Landmark PJ",
+            description: "3D Models",
             imagePath: "./assets/img/pj-head/2404_Ymap.jpg",
             category: [
                 categories.threeD,
@@ -356,7 +356,7 @@
             modalRef: "#portfolioModalCGDog",
             year: "2019",
             month: "Mar",
-            description: "3D Character Design",
+            description: "3D Character",
             imagePath: "./assets/img/pj-head/1903_CGDog.jpg",
             category: [
                 categories.illust,
@@ -571,13 +571,15 @@
                                 <div>${config.month}</div>
                             </div>
                             <div class="hover-content-bottom">
-                                <div class="portfolio-caption-heading">${config.description}</div>
+                                <div class="portfolio-caption-heading">${config.title}</div>
                             </div>
                         </div>
                         <img class="img-fluid" src="${config.imagePath}" alt="" />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">${config.title}</div>
+                        <div class="portfolio-caption-heading">${config.description}<br>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
