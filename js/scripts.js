@@ -64,7 +64,7 @@
     /**
      * dummy Login duckblue
      */
-    const dummy = "LY";
+    const dummy = "duckblue";
     const dummyDom = $("#dummy");
     const dummyInputDom = dummyDom.find("input")
     const pass = window.sessionStorage.getItem('dummy');    
