@@ -64,7 +64,7 @@
     /**
      * dummy Login duckblue
      */
-    const dummy = "duckblue";
+    const dummy = "LY";
     const dummyDom = $("#dummy");
     const dummyInputDom = dummyDom.find("input")
     const pass = window.sessionStorage.getItem('dummy');    
@@ -356,7 +356,7 @@
             order: 5.7,
             title: "CGDog",
             modalRef: "#portfolioModalCGDog",
-            year: "2019",
+            year: "2020",
             month: "Mar",
             description: "3D Character",
             imagePath: "./assets/img/pj-head/1903_CGDog.jpg",
