@@ -347,7 +347,7 @@
             title: "Onegai Ranking",
             modalRef: "#portfolioModalOnegai",
             year: "2020",
-            month: "Nov",
+            month: "Oct",
             description: "3D CG Set",
             imagePath: "./assets/img/pj-head/2011_Onegai_set_logo.jpg",
             category: [
@@ -359,7 +359,7 @@
             title: "CGDog",
             modalRef: "#portfolioModalCGDog",
             year: "2020",
-            month: "Mar",
+            month: "Nov",
             description: "3D Character",
             imagePath: "./assets/img/pj-head/1903_CGDog.jpg",
             category: [
