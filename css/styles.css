@@ -10781,6 +10781,16 @@ text-shadow: 1.5px 1.5px 4px #000000;
   background-color: #cde339;
 }
 .timeline > li .timeline-image h4 {
+  font-size: 10px;
+  font-family: 
+    "Segoe UI",          /* Windows向け・Montserratに近い */
+    "Helvetica Neue",     /* macOS向け・モダンで美しい */
+    Arial,                /* 全OS対応の保険 */
+    sans-serif;           /* 最後の保険（OS任せ） */
+  line-height: 14px;
+  margin-top: 12px;
+}
+/* .timeline > li .timeline-image h4 {
   font-size: 12px;
   font-family: 
   "Georgia", 
@@ -10789,7 +10799,7 @@ text-shadow: 1.5px 1.5px 4px #000000;
   "Noto Serif", 
   serif;
   line-height: 14px;
-  margin-top: 12px;
+  margin-top: 12px; */
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
@@ -10811,15 +10821,15 @@ text-shadow: 1.5px 1.5px 4px #000000;
 .timeline > li:last-child {
   margin-bottom: 0;
 }
-.timeline .timeline-heading h4 {
-  margin-top: 0;
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
   font-family: 
-  "Georgia", 
-  "Times New Roman", 
-  "Palatino", 
-  "Noto Serif", 
-  serif;
-  color: inherit;
+    "Segoe UI",          /* Windows向け・Montserratに近い */
+    "Helvetica Neue",     /* macOS向け・モダンで美しい */
+    Arial,                /* 全OS対応の保険 */
+    sans-serif;           /* 最後の保険（OS任せ） */
+  line-height: 14px;
+  margin-top: 12px;
 }
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
