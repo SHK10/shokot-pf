@@ -64,24 +64,25 @@
     /**
      * dummy Login duckblue
      */
-    const dummy = "LY";
+    const allowedPasswords = ["LY", "joy"];
     const dummyDom = $("#dummy");
-    const dummyInputDom = dummyDom.find("input")
-    const pass = window.sessionStorage.getItem('dummy');    
-    if (dummy === pass) {
-        dummyDom.hide();
+    const dummyInputDom = dummyDom.find("input");
+    const pass = window.sessionStorage.getItem('dummy');
+
+    if (allowedPasswords.includes(pass)) {
+    dummyDom.hide();
     } else {
-        dummyInputDom.on("keyup", (event) => {
-            if (event.keyCode !== 13) {
-                return;
-            }
-            const value = (dummyInputDom && dummyInputDom[0]) ? dummyInputDom[0].value : "";
-            if (value === dummy) {
-                dummyDom.hide();
-                sessionStorage.setItem('dummy', value);
-            }
-        });
-    }    
+    dummyInputDom.on("keyup", (event) => {
+        if (event.keyCode !== 13) return;
+        
+        const value = (dummyInputDom && dummyInputDom[0]) ? dummyInputDom[0].value : "";
+        
+        if (allowedPasswords.includes(value)) {
+            dummyDom.hide();
+            sessionStorage.setItem('dummy', value);
+        }
+    });
+    }
 
     /**
      * projects setting
@@ -173,45 +174,6 @@
             category: [
                 categories.graphic,
                 categories.op,
-            ],
-        },
-        {
-            order: 3.1,
-            title: "LINE Investment Technology",
-            modalRef: "#portfolioModalLIT",
-            year: "2023",
-            month: "Apr",
-            description: "Web Parts Animation",
-            imagePath: "./assets/img/pj-head/2304_LIT.jpg",
-            category: [
-                categories.graphic,
-            ],
-        },
-        {
-            order: 3.2,
-            title: "LINE Skimani",
-            modalRef: "#portfolioModalLINESkimani",
-            year: "2022",
-            month: "Apr",
-            description: "Graphics",
-            imagePath: "./assets/img/pj-head/2204_LINESkimani.jpg",
-            category: [
-                categories.graphic,
-                categories.illust,
-            ],
-        },
-        {
-            order: 3.3,
-            title: "LINE Campus",
-            modalRef: "#portfolioModalLINECampus",
-            year: "2023",
-            month: "Jan",
-            description: "Opening / Ending Video",
-            imagePath: "./assets/img/pj-head/2301_LINECampus.jpg",
-            category: [
-                categories.op,
-                categories.graphic,
-                categories.threeD,
             ],
         },
         {
@@ -534,15 +496,30 @@
             ],
         },
         {
-            order: 15.1,
-            title: "LINE CI Test",
-            modalRef: "#portfolioModalLINECI",
+            order: 11.3,
+            title: "LINE Skimani",
+            modalRef: "#portfolioModalLINESkimani",
             year: "2022",
-            month: "Nov",
-            description: "Logo Animation",
-            imagePath: "./assets/img/pj-head/2211_LINE_CI.jpg",
+            month: "Apr",
+            description: "Graphics",
+            imagePath: "./assets/img/pj-head/2204_LINESkimani.jpg",
             category: [
-                // categories.graphic,
+                categories.graphic,
+                categories.illust,
+            ],
+        },
+        {
+            order: 12.3,
+            title: "LINE Campus",
+            modalRef: "#portfolioModalLINECampus",
+            year: "2023",
+            month: "Jan",
+            description: "Opening / Ending Video",
+            imagePath: "./assets/img/pj-head/2301_LINECampus.jpg",
+            category: [
+                categories.op,
+                categories.graphic,
+                categories.threeD,
             ],
         },
         {
@@ -555,6 +532,30 @@
             imagePath: "./assets/img/pj-head/2406_LINEWALK.jpg",
             category: [
                 categories.threeD,
+            ],
+        },
+        {
+            order: 30.1,
+            title: "LINE Investment Technology",
+            modalRef: "#portfolioModalLIT",
+            year: "2023",
+            month: "Apr",
+            description: "Web Parts Animation",
+            imagePath: "./assets/img/pj-head/2304_LIT.jpg",
+            category: [
+                categories.graphic,
+            ],
+        },
+        {
+            order: 30.2,
+            title: "LINE CI Test",
+            modalRef: "#portfolioModalLINECI",
+            year: "2022",
+            month: "Nov",
+            description: "Logo Animation",
+            imagePath: "./assets/img/pj-head/2211_LINE_CI.jpg",
+            category: [
+                // categories.graphic,
             ],
         },
         // {
